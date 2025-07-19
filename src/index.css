@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'DM Sans', sans-serif;
+ 
+}
+
+
+.fancy {
+  --offset: 5px;
+  background: 
+    var(--bg-linear),
+    var(--bg-radial);
+  border-radius: var(--radius);
+  position: relative;
+  height: var(--height);
+  width: var(--width);
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.fancy::before {
+  content: '';
+  background: conic-gradient(
+    transparent 270deg,
+    var(--conic-color),
+    transparent
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate var(--duration) linear infinite;
+}
+
+.fancy::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.fancy button {
+  background: transparent;
+  color: var(--text-color);
+  font-size: 18px;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  /* padding: 1.5rem; */
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+
+
+.bg-container {
+  background:
+    linear-gradient(135deg, rgba(255, 106, 0, 0.2), rgba(255, 106, 0, 0.2)),
+    url("src/assets/blurred-bg.png") no-repeat center center / cover;
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100%;
+}
+
+
+.no-scrollbar {
+	display: flex;
+	white-space: nowrap;
+	/* Prevents wrapping of elements */
+	overflow: hidden;
+}
+.slide-animation {
+	/* display: flex; */
+	animation: scroll 40s linear infinite;
+	will-change: transform;
+}
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-50%);
+	}
+}

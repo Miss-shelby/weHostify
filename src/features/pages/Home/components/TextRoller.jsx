@@ -1,0 +1,14 @@
+import "./textroller.css"
+const TextRoller = () => {
+  return (
+    <>
+      <section className="animation text-center lg:text-left">
+    <div className="first bg-orange-gradient-text bg-clip-text text-transparent  font-bold font-sans text-xl md:text-4xl"><div>Reach</div></div>
+    <div className="second bg-orange-gradient-text bg-clip-text text-transparent  font-bold font-sans text-xl md:text-4xl"><div>Hit</div></div>
+    <div className="third second bg-orange-gradient-text bg-clip-text text-transparent  font-bold font-sans text-xl md:text-4xl"><div>Capacity</div></div>
+  </section>  
+    </>
+  )
+}
+
+export default TextRoller

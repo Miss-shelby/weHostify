@@ -1,0 +1,221 @@
+:root{
+  --bg-linear: linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1));
+  --bg-radial:radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%);
+  --height:281px;
+  --width:360px;
+  --radius:4px;
+  --conic-color:conic-gradient(from 194.76deg, #FFFFFF 9%, rgba(255, 194, 51, 0.8) 99.06%);
+  /* --conic-color:rgba(255, 221, 0, 0.5); */
+  --duration:8s;
+  --card-one-path:path("M164.404 26.9795C164.404 41.8799 176.483 53.959 191.384 53.959H332.595C347.73 53.959 360 66.2285 360 81.3638V253.595C360 268.73 347.73 281 332.595 281H27.4048C12.2695 281 0 268.73 0 253.595V27.4048C0 12.2696 12.2696 0 27.4048 0H137.425C152.325 0 164.404 12.0791 164.404 26.9795V26.9795Z");
+  --ticket-card-path:path("M360 165.254C360 180.386 347.733 192.653 332.6 192.653H200.344C191.93 192.653 183.982 196.519 178.788 203.139L125.921 270.514C120.727 277.134 112.779 281 104.365 281H27.3996C12.2672 281 0 268.733 0 253.6V27.3996C0 12.2672 12.2672 0 27.3996 0H332.6C347.733 0 360 12.2672 360 27.3996V165.254Z");
+  --fragment-card-path:path("M38.8164 1.87207H176.056C183.757 1.87233 190 8.11581 190 15.8174V47.9756C190 55.677 183.757 61.9206 176.056 61.9209H15.4326C4.036 61.9209 -2.54801 48.9919 4.1543 39.7744L27.5371 7.61621C30.0792 4.12016 34.0934 2.00659 38.3984 1.87793L38.8164 1.87207Z")
+}
+.card-ring {
+  --offset: 2px;
+  /* background: 
+    var(--bg-linear),
+    var(--bg-radial); */
+    background: white;
+  /* border-radius: var(--radius); */
+  position: relative;
+  clip-path: var(--card-one-path);
+  height: var(--height);
+  width: var(--width);
+  max-width: 100%;
+  overflow: hidden;
+  /* border:1px linear-gradient(from 194.76deg, #FFFFFF 9%, rgba(255, 194, 51, 0.8) 99.06%); */
+  /* isolation: isolate; */
+  backdrop-filter: blur(16.439741134643555px)
+}
+
+
+.card-ring::before {
+  content: '';
+  /* background: conic-gradient(
+    transparent 270deg,
+    var(--conic-color),
+    transparent
+  ); */
+  background: var(--conic-color);
+  /* background: conic-gradient(from 0deg, #FFFFFF 9%, rgba(255, 194, 51, 0.8) 99.06%); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate var(--duration) linear infinite;
+  mask: var(--card-one-path);
+  -webkit-mask: var(--card-one-path);
+  z-index: -1;
+}
+
+.card-ring::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.ticket-card{
+    --offset: 2.5px;
+  /* background: 
+    var(--bg-linear),
+    var(--bg-radial); */
+    background: white;
+  /* border-radius: var(--radius); */
+  position: relative;
+  clip-path: var(--ticket-card-path);
+  height: var(--height);
+  width: var(--width);
+  max-width: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(16.439741134643555px)
+}
+
+.ticket-card::before {
+  content: '';
+  /* background: conic-gradient(
+    transparent 270deg,
+    var(--conic-color),
+    transparent
+  ); */
+  background: var(--conic-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate var(--duration) linear infinite;
+}
+
+.ticket-card::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.fragment{
+   --offset: 2.5px;
+  /* background: 
+    var(--bg-linear),
+    var(--bg-radial); */
+    background: white;
+  /* border-radius: var(--radius); */
+  position: absolute;
+  right: 0;
+  top:204px;
+  clip-path: var(--fragment-card-path);
+  height:62px;
+  width:204px;
+  max-width: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(16.439741134643555px)
+}
+
+.fragment::before {
+  content: '';
+  /* background: conic-gradient(
+    transparent 270deg,
+    var(--conic-color),
+    transparent
+  ); */
+  background: var(--conic-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate var(--duration) linear infinite;
+}
+
+.fragment::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+.card {
+  /* width: 360px;
+  height: 281px; */
+  background: transparent;
+  /* background: #ffffff; */
+ inset:0;
+ z-index:20;
+  padding: 24px;
+  position: absolute;
+  /* box-sizing: border-box; */
+  font-family: sans-serif;
+}
+
+/* darkmode gradient 
+border: 2px solid;
+
+border-image-source: linear-gradient(194.76deg, #0E0B42 9%, rgba(255, 194, 51, 0.8) 99.06%); */
+.dark{
+
+  --conic-color: conic-gradient(from 194.76deg, #0E0B42 9%, rgba(255, 194, 51, 0.8) 99.06%);
+}
+
+
+.img {
+     /* clip-path: polygon( 80px 0%, 100% 0%,100% 100%,0% 100%,0% 80px,0 0); */
+     /* when we give circle just 50% it means draw a 50% percent radius circle but then we can give at which determines the position of the circle  we can use top,left,right or px to assign value to different corners  */
+  clip-path: circle(50% at  100px 100px);
+}
+
+/* inset function  */
+/* clips box1 from all four sides from the parent  */
+/* .box1{
+    clip-path: inset(20px 30px 35px 20px);
+} */
+
+/* Meanwhile, inset() comes with additional powers! You can specify the border-radius as one of its parameters. You’ll have to use the round keyword followed by the border-radius value, as depicted in the next code block. */
+
+/* if we pass one value for the round it affects all sides but if we use two values, the first value is assigned to top left corner and bottom right corner while the second value is assigned to top right corner and the bottom left corner. while four values adds to each side */
+.box1{
+    clip-path: inset(20px 30px 35px 20px round 20px 40px 70px 40px);
+}
+/* circle:use to draw a circle around a cordinate,draws a circle with radius 100px at its position is  40% on x and y axis  */
+/* .box2{
+clip-path: circle(100px at 120%);
+} */
+
+/* elipse:use to create oval shape takes width and height followed by at which is the cliping position  */
+.box2{
+/* clip-path: ellipse(100px 50px at right);  */
+/* or  50% 50% here presents  center */
+clip-path: ellipse(100px 50px at 50% 50%); 
+}
+
+/* polygon  */
+
+/* path function  m starts while z connects the last, we use L to draw staright  line and a 10,10,0,0,0,0 for curve  */
+/* .box3{
+clip-path:path("M 10,40 L 70, 40 A 10,10,0,0,0 80,30 L 80,10 A 10,10,0,0,1 90,0 L 140,0 A 10,10 0,0,0,1 150,10 L 150,190 A 10,10,10,0,0.1 140,200 L 10,200,A 10,10 0,0,1 0,190 L 0,50 L 10,40 Z")
+} */
+ .box3 {
+  clip-path: path("M10 40 L70 40 A10 10 0 0 0 80 30 L80 10 A10 10 0 0 1 90 0 L140 0 A10 10 0 0 0 150 10 L150 190 A10 10 0 0 1 140 200 L10 200 A10 10 0 0 1 0 190 L0 50 L10 40 Z");
+}
