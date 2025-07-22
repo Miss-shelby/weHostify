@@ -32,6 +32,7 @@ import LEFTDARKOVERLAY from "../assets/dark-overlay.png"
 import RIGHTDARKOVERLAY from "../assets/dark-overlay-2.png"
 import BGONE from "../assets/empowerBg.png"
 import HOSTINGAGENTMOBILE from "../assets/Mask group.png"
+import GLOW from "../assets/bg-gradient.png"
 export {
     LOGO,
     FLAG,
@@ -66,6 +67,7 @@ export {
     RIGHTDARKOVERLAY,
     LEFTDARKOVERLAY,
     BGONE,
-    HOSTINGAGENTMOBILE
+    HOSTINGAGENTMOBILE,
+    GLOW
 
 }

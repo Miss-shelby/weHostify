@@ -1,4 +1,4 @@
-import { AFRICANWOMAN } from "../../../../constants/assetexports";
+import { AFRICANWOMAN, GLOW } from "../../../../constants/assetexports";
 import FancyButton from "../../../shared/Buttons/FancyButton";
 import TextRoller from "./TextRoller"
 
@@ -45,19 +45,19 @@ const HeroSection = () => {
              />
         </div>
         <div className="hidden dark:flex relative  flex-col  justify-center items-center">
-           <img src="src/assets/bg-gradient.png" alt="glow" className=" object-contain"/>
+           <img src={GLOW} alt="glow" className=" object-contain"/>
           <img src={AFRICANWOMAN} alt="african woman" className="absolute top-36 object-contain"/>
         </div>
         {/* light mode sm  */}
         <div className="dark:hidden lg:hidden flex relative  flex-col  justify-center items-center">
-           <img src="src/assets/bg-gradient.png" alt="glow" className=" object-contain"/>
+           <img src={GLOW} alt="glow" className=" object-contain"/>
           <img src={AFRICANWOMAN} alt="african woman" className="absolute top-32 object-contain"/>
         </div>
         {/* light mode  */}
         <div className="hidden lg:flex dark:hidden relative  justify-center items-center w-full ">
         {/* Top glow */}
         <img
-          src="src/assets/bg-gradient.png"
+          src={GLOW}
           alt="glow"
           className="absolute    object-contain "
         />
@@ -71,7 +71,7 @@ const HeroSection = () => {
 
          {/* Bottom glow */}
         <img
-          src="src/assets/bg-gradient.png"
+          src={GLOW}
           alt="glow"
           className="absolute top-44 opacity-60  object-contain "
         />
