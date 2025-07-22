@@ -12,7 +12,7 @@ const Features = () => {
                <p className="text-xl lg:text-3xl font-bold text-center sm:text-left font-sans text-[#130D08] dark:text-[#fff] pt-2">Works Perfectly with WordPress, Joomla, and More</p>
                 <p className="text-xl xl:max-w-3xl text-center sm:text-left mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 ">WeHostify is designed to run seamlessly with the world’s most trusted content management systems — so you can keep building with what you’re already comfortable using.  </p>
             </div>
-            <div className="grid px-6 sm:px-0 lg:grid-cols-2 grid-rows-2 gap-6 ">
+            <div className="grid  sm:px-0 lg:grid-cols-2 grid-rows-2 gap-6 ">
                 {
                     features.map((f,idx)=>(
                         <FeaturesCard  key={idx} {...f}/>
