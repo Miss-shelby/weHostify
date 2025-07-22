@@ -28,6 +28,10 @@ import PROFILEIMG from "../assets/profile-image.png"
 import FAQGRADIENT from "../assets/footer-gradient.png"
 import LEFTWHITEOVERLAY from "../assets/white-overlay.png"
 import RIGHTWHITEOVERLAY from "../assets/white-overlay-2.png"
+import LEFTDARKOVERLAY from "../assets/dark-overlay.png"
+import RIGHTDARKOVERLAY from "../assets/dark-overlay-2.png"
+import BGONE from "../assets/empowerBg.png"
+import HOSTINGAGENTMOBILE from "../assets/Mask group.png"
 export {
     LOGO,
     FLAG,
@@ -58,6 +62,10 @@ export {
     SCRIBBLEMOBILE,
     FAQGRADIENT,
     LEFTWHITEOVERLAY,
-    RIGHTWHITEOVERLAY
+    RIGHTWHITEOVERLAY,
+    RIGHTDARKOVERLAY,
+    LEFTDARKOVERLAY,
+    BGONE,
+    HOSTINGAGENTMOBILE
 
 }

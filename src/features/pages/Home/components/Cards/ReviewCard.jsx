@@ -9,8 +9,8 @@ export const ReviewCard =({customer,review,occupation,profileImg})=>{
             <div className="flex mt-2 gap-2">
                 <img className="h-12 w-12" src={profileImg} alt='customer-profile-image'/>
                 <div className="">
-                    <p className='text-[#130D08] text-base font-sans font-medium'>{customer}</p>
-                    <p className='text-[#616161]  text-sm font-sans font-light'>{occupation}</p>
+                    <p className='text-[#130D08] dark:text-[#FFFFFF] text-base font-sans font-medium'>{customer}</p>
+                    <p className='text-[#616161] dark:text-[#EDEDED]  text-sm font-sans font-light'>{occupation}</p>
                 </div>
                 
             </div>

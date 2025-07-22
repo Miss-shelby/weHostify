@@ -10,9 +10,9 @@ const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="">
-           {/* <img className=' object-contain absolute z-[0] w-full right-0  top-0 ' src={FAQGRADIENT} alt='Yellow gradient'/> */}
-    <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-32 relative pb-10 px-6 lg:px-16'>
+    <div className="relative">
+    <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-32 relative pb-10 px-6 lg:px-16'>
+           <img className=' object-contain  hiden xl:block absolute z-[0]  right-0  top-1/3 ' src={FAQGRADIENT} alt='Yellow gradient'/>
         <div className="md:max-w-[790px] w-full mx-auto">
              <p className="text-sm sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Frequently Asked Questions (FAQs)</p>
             <p className="text-xl lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">You’ve Got Questions. We’ve Got Answers</p>

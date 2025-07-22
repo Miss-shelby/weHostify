@@ -48,14 +48,18 @@ const HeroSection = () => {
            <img src="src/assets/bg-gradient.png" alt="glow" className=" object-contain"/>
           <img src={AFRICANWOMAN} alt="african woman" className="absolute top-36 object-contain"/>
         </div>
-
+        {/* light mode sm  */}
+        <div className="dark:hidden lg:hidden flex relative  flex-col  justify-center items-center">
+           <img src="src/assets/bg-gradient.png" alt="glow" className=" object-contain"/>
+          <img src={AFRICANWOMAN} alt="african woman" className="absolute top-32 object-contain"/>
+        </div>
         {/* light mode  */}
-        <div className="dark:hidden relative flex justify-center items-center w-full ">
+        <div className="hidden lg:flex dark:hidden relative  justify-center items-center w-full ">
         {/* Top glow */}
         <img
           src="src/assets/bg-gradient.png"
           alt="glow"
-          className="absolute   object-contain "
+          className="absolute    object-contain "
         />
 
         {/* Woman image */}

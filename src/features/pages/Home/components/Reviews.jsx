@@ -1,4 +1,4 @@
-import { BGGRADIENT, LEFTWHITEOVERLAY, RIGHTWHITEOVERLAY } from "../../../../constants/assetexports"
+import { BGGRADIENT, LEFTDARKOVERLAY, LEFTWHITEOVERLAY, RIGHTDARKOVERLAY, RIGHTWHITEOVERLAY } from "../../../../constants/assetexports"
 import { reviews } from "../../../../data"
 import { ReviewCard } from "./Cards/ReviewCard"
 
@@ -16,9 +16,12 @@ const Reviews = () => {
                     style={{
                         background: 'radial-gradient(ellipse at left center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%)' }}>
                 </div> */}
-                <div  className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-left bg-contain  pointer-events-none z-10" 
+                <div  className="dark:hidden absolute left-0 top-0 w-full h-full bg-no-repeat bg-left bg-contain  pointer-events-none z-10" 
                 style={{backgroundImage:`url(${LEFTWHITEOVERLAY})`}}>
-
+                </div>
+                {/* FOR DARK MODE  */}
+                 <div  className="hidden dark:block absolute left-0 top-0 w-full h-full bg-no-repeat bg-left bg-contain  pointer-events-none z-10" 
+                style={{backgroundImage:`url(${LEFTDARKOVERLAY})`}}>
                 </div>
                 {/* Right fade overlay */}
                 {/* <div className="absolute right-0 top-0 h-full  w-40 pointer-events-none z-10"
@@ -27,9 +30,12 @@ const Reviews = () => {
                         transform: 'rotate(180deg)', // Flip the gradient for the right side
                     }}
                 ></div> */}
-                <div  className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-right bg-contain  pointer-events-none z-10" 
+                <div  className="dark:hidden absolute left-0 top-0 w-full h-full bg-no-repeat bg-right bg-contain  pointer-events-none z-10" 
                 style={{backgroundImage:`url(${RIGHTWHITEOVERLAY})`}}>
-
+                    {/* FOR DARK MODE  */}
+                <div  className="hidden dark:block absolute left-0 top-0 w-full h-full bg-no-repeat bg-left bg-contain  pointer-events-none z-10" 
+                style={{backgroundImage:`url(${RIGHTDARKOVERLAY})`}}>
+                </div>
                 </div>
             <div className="no-scrollbar slide-container">
                 <div className="slide-animation flex  gap-6 ">
