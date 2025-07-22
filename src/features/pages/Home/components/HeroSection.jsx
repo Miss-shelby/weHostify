@@ -1,8 +1,10 @@
 import { AFRICANWOMAN, GLOW } from "../../../../constants/assetexports";
 import FancyButton from "../../../shared/Buttons/FancyButton";
+import useIsMobile from "../../../shared/utils/isMobile";
 import TextRoller from "./TextRoller"
 
 const HeroSection = () => {
+   const isMobile = useIsMobile();
   return (
     <div className="flex flex-col items-center justify-center pt-28 px-6 xl:px-0">
         <p className="text-[#616161] font-sans text-base dark:text-[#EDEDED] text-center">Built in Africa. Made for the World.</p>
@@ -20,7 +22,8 @@ const HeroSection = () => {
                 bgRadial="radial-gradient(50% 50% at 50% 50%, #FFDD00 0%, #FFDD00 100%)"
                 textColor="#130D08"
                 conicColor="rgba(255, 106, 0, 0.5)"
-                width="170px"
+                // width="170px"
+                width={isMobile ? "150px" : "170px"}
                 height="52px"
                 borderRadius="50px"
                 animationSpeed="5s"
@@ -34,7 +37,7 @@ const HeroSection = () => {
                 bgRadial="radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%)"
                 textColor="#fff"
                 conicColor="rgba(255, 221, 0, 0.5)"
-                width="170px"
+                width={isMobile ? "150px" : "170px"}
                 height="52px"
                 borderRadius="50px"
                 animationSpeed="5s"
