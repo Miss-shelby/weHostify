@@ -10,16 +10,16 @@ const HostingCard = ({name,desc,price,packages,isPopular}) => {
   console.log(darkMode,'mode here');
   
   return (
-    <div className=' lg:max-w-full flex flex-col  hover:animate-pulse-glow cursor-pointer transition-all duration-500 ease-in-out hover:scale-10 hover:border-[rgba(255,194,51,0.8)] hover:border-[3px] relative px-[22px] py-7 rounded-[20px] bg-[#FFFFFF] dark:bg-[#18183A]'>
+    <div className=' lg:max-w-full flex flex-col  hover:animate-pulse-glow cursor-pointer transition-all duration-500 ease-in-out hover:scale-10 hover:border-[rgba(255,194,51,0.8)] hover:border-[3px] relative px-4 lg:px-[22px] py-7 rounded-[20px] bg-[#FFFFFF] dark:bg-[#18183A]'>
       {
         isPopular && <div className="left-1/2 transform -translate-x-1/2  absolute top-[6px]">
-          <Button title="Most Popular" textColor="text-[#130D08]" bgColor="bg-[#FFDD00]" extraClass="!font-semibold !text-sm font-sans !py-[10px] xl:!px-[35px] text-center"/>
+          <Button title="Most Popular" textColor="text-[#130D08]" bgColor="bg-[#FFDD00]" extraClass="!font-semibold !text-sm font-sans !py-[10px] lg:!px-[20px] xl:!px-[35px] text-center"/>
         </div>
       }
       <div className="w-full h-64 bg-container flex flex-col items-center  p-6 rounded-xl">
-        <p className='text-[#130D08] dark:text-[#FFFFFF] font-bold text-xl  xl:text-2xl font-sans'>{name}</p>
-        <p className='text-[#616161] dark:text-[#EDEDED] text-base xl:text-base font-medium font-sans pt-1 text-center'>{desc}</p>
-        <p className='text-[#130D08] dark:text-[#EDEDED]  font-bold text-xl xl:text-2xl font-sans pt-2 text-center'>{price} <span className='font-medium text-sm'> Annually</span></p>
+        <p className='text-[#130D08] dark:text-[#FFFFFF] font-bold text-xl  sm:text-2xl font-sans'>{name}</p>
+        <p className='text-[#616161] lg:leading-[1.2rem] xl:leading-[1.5rem] lg:min-h-[4.85rem] xl:min-h-fit dark:text-[#EDEDED] text-base  sm:text-base font-medium font-sans pt-1 text-center'>{desc}</p>
+        <p className='text-[#130D08] dark:text-[#EDEDED]  font-bold text-xl sm:text-2xl font-sans pt-2 text-center'>{price} <span className='font-medium text-sm'> Annually</span></p>
         <div className="mt-6">
             <FancyButton
                 text="Choose Plan"

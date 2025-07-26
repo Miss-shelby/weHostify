@@ -1,11 +1,12 @@
 import React from 'react'
 import { FancyClipCard, FancyClipCardTwo } from '../../../../shared/Cards/ClipCard'
+import { GLOW } from '../../../../../constants/assetexports'
 
 const AIWebsiteCard = () => {
   return (
     <>
     <div className='hidden lg:block'>
-    <div className='flex flex-col xl:flex-row gap-8 items-center w-full'>
+    <div className='flex md:flex-row   gap-8 items-center w-full'>
         <div className="">
         <FancyClipCard number="01"
             title="Prompt Design"
@@ -39,15 +40,20 @@ const AIWebsiteCard = () => {
         </div>
     </div>
     </div>
+    {/* mobile cards here  */}
     <div className="block lg:hidden">
-        <div className="flex flex-col gap-6 items-center justify-end">
-             <div className="">
+        <div className="flex flex-col xs:gap-6 items-center justify-center">
+             <div className=" scale-[0.6] smx:scale-[0.86] xs:scale-[1]">
                 <FancyClipCard extraClass="pb-10" width='350px' height='180px' number="01"
                 title="Prompt Design"
                 description="Describe your business, and our AI handles layout, color, and content"
                 clipPath="M159.837 18.0605C159.837 27.6053 167.574 35.3428 177.119 35.3428H323.356C338.071 35.3428 350 47.2715 350 61.9864V154.135C350 168.85 338.071 180.778 323.356 180.778H26.6436C11.9287 180.778 0 168.85 0 154.135V27.4219C0 12.7071 11.9287 0.77832 26.6436 0.77832H142.555C152.099 0.77832 159.837 8.51584 159.837 18.0605Z"/>
              </div>
-        <div className="">
+        <div className="scale-[0.6] smx:scale-[0.86] xs:scale-[1]">
+            <div className="absolute bottom-0  md:hidden  left-0   z-0 pointer-events-none opacity-55   ">
+                <img src={GLOW} alt="left-gradient glow"
+                className=" object-cover w-full h-full   translate-x-[-30%] translate-y-[40%]"/>
+            </div>
             <FancyClipCardTwo width='350px' height='180px' top='140px' right='0px'
             fragmentHeight='41px' fragmentWidth='177px'
             fragmentPath="M27.248 1.26074H162.471C169.958 1.26076 176.028 7.33057 176.028 14.8184V25.5039C176.028 32.9917 169.958 39.0625 162.471 39.0625H15.4541C3.051 39.0624 -2.84058 23.7853 6.35059 15.457L18.1436 4.77148C20.6372 2.51193 23.8829 1.26074 27.248 1.26074Z"
@@ -56,7 +62,7 @@ const AIWebsiteCard = () => {
             description="Customize your design text, change colors, and swap images with ease"
             clipPath="M350 96.8542C350 111.566 338.074 123.493 323.362 123.493H191.521C185.255 123.493 179.19 125.702 174.391 129.731L121.853 173.847C117.054 177.877 110.989 180.085 104.723 180.085H26.6385C11.9264 180.085 0 168.159 0 153.447V26.7239C0 12.0119 11.9264 0.0854492 26.6385 0.0854492H323.362C338.074 0.0854492 350 12.0119 350 26.7239V96.8542Z"/>
         </div>
-        <div className="relative">
+        <div className="relative scale-[0.6] smx:scale-[0.86] xs:scale-[1]">
          <FancyClipCard number=""
          height='181px' width='350px'
             title="Instant Preview"
@@ -66,7 +72,7 @@ const AIWebsiteCard = () => {
                  <p className="text-[#FF6A00] mt-20 font-semibold font-sans text-3xl lg:text-[41px]">  03</p>
             </div>
         </div>
-         <div className="">
+         <div className="scale-[0.6] smx:scale-[0.86] xs:scale-[1]">
             <FancyClipCard extraClass="pb-10" width='350px' height='180px' number="04"
             title="Built with HTML"
             description="SEO-friendly, responsive static pages, bring your visions to life "

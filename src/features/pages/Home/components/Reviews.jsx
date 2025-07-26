@@ -4,7 +4,7 @@ import { ReviewCard } from "./Cards/ReviewCard"
 
 const Reviews = () => {
   return (
-    <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-32 relative pb-10 px-6 lg:px-16'>
+    <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-14 lg:pt-28  relative  px-6 lg:px-16'>
          <p className="text-sm sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">What Our Users Are Saying</p>
         <p className="text-xl lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Loved by Creators, Businesses & Organizations Alike</p>
         <p className="text-base sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 text-center">We want to build trust with you through real stories and experiences from happy <span className='lg:block'>  customers.</span></p>

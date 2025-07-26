@@ -16,10 +16,10 @@ export const FancyClipCard =({title,number,description,clipPath,width = "360px",
         <p className="text-[#FF6A00] font-semibold font-sans text-3xl lg:text-[41px] ">
           {number}
         </p>
-        <h3 className="text-[#130D08] dark:text-[#FFFFFF] font-semibold text-xl lg:text-3xl font-sans mt-3 lg:mt-6">
+        <h3 className="text-[#130D08] dark:text-[#FFFFFF] font-semibold text-xl md:text-3xl font-sans mt-3 lg:mt-6">
           {title}
         </h3>
-        <p className="font-medium text-[#616161] dark:text-[#EDEDED] font-sans text-sm lg:text-xl pt-3">
+        <p className="font-medium text-[#616161] dark:text-[#EDEDED] font-sans text-sm md:text-xl pt-3">
           {description}
         </p>
       </div>
@@ -43,8 +43,8 @@ export const FancyClipCardTwo =({title,number,description,clipPath,width = "360p
       <div className={`card-wrapper w-full ${extraClass}`}style={cardStyleVars}>
         <div className="card-ring-two dark:bg-[#18183A]"></div>
         <div className="card-inner flex flex-col dark:bg-[#18183A]">
-          <h3 className="text-[#130D08] dark:text-[#FFFFFF]  font-semibold text-xl lg:text-3xl  font-sans ">{title}</h3>
-          <p className="font-medium text-[#616161] dark:text-[#EDEDED]  font-sans text-sm lg:text-xl pt-3">{description}</p>
+          <h3 className="text-[#130D08] dark:text-[#FFFFFF]  font-semibold text-xl md:text-3xl  font-sans ">{title}</h3>
+          <p className="font-medium text-[#616161] dark:text-[#EDEDED]  font-sans text-sm md:text-xl pt-3">{description}</p>
           <p className="text-[#FF6A00] mt-10 lg:mt-20 font-semibold font-sans text-3xl lg:text-[41px] ">
             {number}
           </p>

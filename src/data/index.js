@@ -1,5 +1,7 @@
 import { AFRICANWOMAN, BGONE, BTCGIRL, IMAGEONE, IMAGETWO, LIGHTING, MIGRATION, PROFILEIMG, SECURE, SUPPORT } from "../constants/assetexports";
 
+
+
 export const navLinks =[
     {
         title:"Pricing",
@@ -256,6 +258,22 @@ export const slides = [
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quod nulla cumque fugit nostrum quis cupiditate adipisci ad maxime facere. Adipisci nesciunt maiores dignissimos saepe. Odit eos possimus, dolorem laboriosam odio consectetur mollitia nesciunt necessitatibus. Ipsa quibusdam numquam molestias cupiditate quod deserunt officiis veritatis error exercitationem explicabo! Omnis, nisi nobis!",
     thumb:AFRICANWOMAN ,
     secondaryThumb: IMAGEONE,
+  },
+   {
+    id: 5,
+    bg: BGONE,
+    title: "chyco2",
+    description: "In this listicle, we won’t just be exploring the 40 examples. We’ll also look at the technologies and the core CSS principles used for each one. Let’s start by checking out 10 custom examples. After that, we’ll see 30 others created by developers across the web.",
+    thumb: IMAGEONE,
+    secondaryThumb: BTCGIRL,
+  },
+    {
+    id: 6,
+    bg: BGONE,
+    title: "Activa8 Hub2",
+    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quod nulla cumque fugit nostrum quis cupiditate adipisci ad maxime facere. Adipisci nesciunt maiores dignissimos saepe. Odit eos possimus, dolorem laboriosam odio consectetur mollitia nesciunt necessitatibus. Ipsa quibusdam numquam molestias cupiditate quod deserunt officiis veritatis error exercitationem explicabo! Omnis, nisi nobis!",
+    thumb: IMAGEONE,
+    secondaryThumb: BTCGIRL,
   },
 
 ];

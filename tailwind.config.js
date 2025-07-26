@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        xs:"430px",
+        smx:"320px"
+      },
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
       },

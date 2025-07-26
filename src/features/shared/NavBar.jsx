@@ -6,7 +6,7 @@ import FancyButton from './Buttons/FancyButton'
 import { Icons } from '../../Icons'
 import {motion, AnimatePresence} from 'framer-motion'
 import { IoCloseOutline } from "react-icons/io5";
-
+import { RxHamburgerMenu } from "react-icons/rx";
 const NavBar = () => {
   const [darkMode,setDarkMode] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const NavBar = () => {
            <img src={LOGO} alt='logo'/>
         </div>
           <div className="hidden xl:flex gap-6">
-            <ul className='flex items-center text-[#130D08] dark:text-[#fff] font-medium text-base cursor-pointer font-sans gap-5 '>
+            <ul className='flex items-center text-[#130D08]  dark:text-[#fff] font-medium text-base cursor-pointer font-sans gap-5 '>
           {
             navLinks.map((nav,idx)=>(
               <li className='flex items-center gap-2' key={idx}>{nav.title} <span> {nav.dropDown && (
@@ -56,7 +56,7 @@ const NavBar = () => {
 
           {/* medium and mobile screen  */}
           <div className="cursor-pointer block xl:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
-                    {menuOpen ? <IoCloseOutline size={25}/> : <Icons.harmburger />}
+                    {menuOpen ? <IoCloseOutline className='dark:text-white' size={25}/> : <RxHamburgerMenu className='dark:text-white' size={25}/>}
           </div>
           <AnimatePresence>
             

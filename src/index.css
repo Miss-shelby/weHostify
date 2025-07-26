@@ -54,7 +54,7 @@ body {
 .fancy button {
   background: transparent;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 16px;
   position: absolute;
   inset: 0;
   z-index: 10;
