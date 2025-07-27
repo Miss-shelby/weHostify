@@ -10,8 +10,8 @@ const HostingAgents = () => {
         <img className=' object-contain hidden lg:block absolute z-[0] top-0 opacity-45' src={BGGRADIENT} alt='Yellow gradient'/>
         <div className="w-full z-20">
             <p className="text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">More Hosting, More Care.</p>
-            <p className="text-xl lg:text-3xl font-bold text-[#130D08] dark:text-[#fff] pt-2 text-center">Your 24/7 Personal Hosting Agent</p>
-            <p className="text-base font-sans  font-medium text-[#616161] dark:text-[#EDEDED] pt-3 text-center"> Once you subscribe to more than one hosting plan, or upgrade to the <span className="lg:block">Platinum Plan, you can skip the ticket system. Get assigned to a </span> <span className='lg:block'>dedicated WeHostify agent.</span></p>
+            <p className="text-2xl lg:text-3xl font-bold text-[#130D08] dark:text-[#fff] pt-2 text-center">Your 24/7 Personal Hosting Agent</p>
+            <p className="text-xl font-sans  font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:text-center"> Once you subscribe to more than one hosting plan, or upgrade to the <span className="lg:block">Platinum Plan, you can skip the ticket system. Get assigned to a </span> <span className='lg:block'>dedicated WeHostify agent.</span></p>
             <div className="flex flex-col xl:flex-row w-full justify-between pt-6 sm:pt-10 items-start ">
                 <div className="w-full">
                     <img className=' object-contain  w-full hidden xl:block  xl:w-[546px]' src={HOSTINGAGENT} alt='Hosting/customer care agent'/>
