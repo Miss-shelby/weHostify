@@ -6,13 +6,13 @@ import { Icons } from '../../../../Icons'
 const FlexiblePayment = () => {
   return (
     <div className="relative">
-        <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-14 lg:pt-28 relative  px-6 lg:px-16'>
+        <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
             <img className=' object-contain w-[350px] h-[350px] lg:hidden absolute z-[0] right-0 top-0 opacity-25' src={BGGRADIENT} alt='Yellow gradient'/>
             <div className="w-full z-20">
                 <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Pay Your Way — Without the Stress</p>
-                <p className="text-2xl lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Flexible Payment Options for Everyone</p>
+                <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 text-center">Flexible Payment Options for Everyone</p>
                 <div className="">
-                    <p className="text-lg leading-tight sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 text-center">WeHostify lets you pay using the methods that work best for you — from
+                    <p className="text-lg leading-tight sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 text-center">WeHostify lets you pay using the methods that work best for you — from
                         <span className='lg:block'> local bank transfers to global payment gateways. No complications,</span>  no hidden fees. </p>
                     <div className="hidden 2xl:grid grid-cols-[378px_520px_378px]  gap-7 mt-20">
                         <div className="bg-[#019CDE] min-h-[300px]  rounded-[24px] flex flex-col justify-center items-center">
@@ -41,22 +41,22 @@ const FlexiblePayment = () => {
                             <div className="h-full">
                                <img className='h-[300px] sm:h-[340px] absolute bottom-8 left-1/2 -translate-x-1/2  object-cover ' src={BTCGIRL} alt='girl-is-holding-bitcoin-her-hands-character-trendy-retro-style 1'/>
                             </div>
-                            <p className=' text-[#130D08] font-bold text-lg text-center font-sans'>Pay with Bitcoin  </p>
+                            <p className=' text-[#130D08] font-bold text-2xl text-center font-sans'>Pay with Bitcoin  </p>
                         </div>
                         <div className="bg-[#019CDE] py-10  rounded-[24px] flex flex-col justify-center items-center">
                             <div className="">
                                 <Icons.paypal/>
                             </div>
-                            <p className='font-bold text-[#FFFFFF] text-lg font-sans pt-5'>PayPal</p>
-                            <p className='font-light text-[#FFFFFF] text-base text-center font-sans'>Make credit card payment <span className='block'></span>using PayPal</p>
+                            <p className='font-bold text-[#FFFFFF] text-2xl font-sans pt-5'>PayPal</p>
+                            <p className='font-light text-[#FFFFFF] text-lg text-center font-sans'>Make credit card payment <span className='block'></span>using PayPal</p>
                         </div>
                         
                         <div className="bg-[#011B33] py-10  rounded-[24px] flex flex-col justify-center items-center">
                             <div className="">
                                 <Icons.paypal/>
                             </div>
-                            <p className='font-bold text-[#FFFFFF] text-lg font-sans pt-5'>PayStack</p>
-                            <p className='font-light text-[#FFFFFF] text-base text-center font-sans'>Make credit card payment  <span className='block'></span>using PayStack</p>
+                            <p className='font-bold text-[#FFFFFF] text-2xl font-sans pt-5'>PayStack</p>
+                            <p className='font-light text-[#FFFFFF] text-lg text-center font-sans'>Make credit card payment  <span className='block'></span>using PayStack</p>
                         </div>
                     </div>
                     <div className="dark:bg-[#18183A] bg-[linear-gradient(94.18deg,_#1A1715_0.87%,_#000000_98.72%)] dark:bg-none relative h-[200px] lg:h-[300px] mt-[26px] flex flex-col justify-center  rounded-[24px]">

@@ -15,11 +15,11 @@ const Faq = () => {
                     <img src={GLOW} alt="glow"
                       className=" object-cover lg:w-[667px] lg:h-[644px] translate-x-[20%] lg:-translate-y-[10%]  h-full right-0 w-[350px]  "/>
           </div>
-    <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-28 lg:pt-28 relative  px-6 lg:px-16'>
+    <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
         <div className="md:max-w-[790px] w-full mx-auto">
              <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Frequently Asked Questions (FAQs)</p>
-            <p className="text-2xl lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">You’ve Got Questions. We’ve Got Answers</p>
-            <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-[10px] text-center">Before you make your move, let’s clear up the common questions. Here’s everything you need to know about getting started, managing your website, and making the most of WeHostify.</p>
+            <p className="text-2xl leading-tight lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-2 text-center">You’ve Got Questions. We’ve Got Answers</p>
+            <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-[10px] text-center">Before you make your move, let’s clear up the common questions. Here’s everything you need to know about getting started, managing your website, and making the most of WeHostify.</p>
         </div>
        <div className="w-full mt-6 lg:mt-14 space-y-4 relative">
         

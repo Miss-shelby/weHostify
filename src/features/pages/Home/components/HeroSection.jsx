@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col items-center w-ful justify-center pt-28 px-6 xl:px-0">
         <p className="text-[#616161] text-center font-sans text-base dark:text-[#EDEDED] ">Built in Africa. Made for the World.</p>
-       <div className="hidden xs:flex flex-col lg:flex-row lg:gap-2 pt-2">
+       <div className="hidden xs:flex flex-col lg:flex-row lg:gap-2 lg:pt-2 pt-1">
          <p className="text-[#130D08] text-center font-bold font-sans text-2xl  md:text-4xl   dark:text-[#FFFFFF]">Web Hosting with African Roots, Global</p>
          <TextRoller/>
           {/* <p className="bg-orange-gradient-text bg-clip-text text-transparent  font-bold font-sans text-4xl">Reach</p> */}
@@ -23,7 +23,7 @@ const HeroSection = () => {
           </div>
 
 
-          <p className="text-[#616161] text-lg  md:text-[22px] lg:leading-[28px] dark:text-[#EDEDED] font-sans font-medium text-center lg:pt-[6px]">WeHostify powers your digital presence with reliable,
+          <p className="text-[#616161] text-lg leading-tight  md:text-[22px] lg:leading-[28px] dark:text-[#EDEDED] font-sans font-medium text-center lg:pt-[6px]">WeHostify powers your digital presence with reliable,
             <span className="sm:block">secure hosting tailored for Africa’s digital revolution.</span> </p>
         <div className="flex items-center gap-5  lg:gap-10 mt-10">
             <FancyButton

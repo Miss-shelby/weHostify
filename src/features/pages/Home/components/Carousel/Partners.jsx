@@ -33,7 +33,7 @@ const visibleSlides = [
   
 
   return (
-    <div className="relative w-full h-[350px] sm:h-[500px] lg:h-[750px] pb-4 lg:pb-10  mt-[32px] rounded-[30px] pl-3 md:pl-10 overflow-hidden  flex flex-col justify-end">
+    <div className="relative w-full h-[350px] sm:h-[500px] lg:h-[750px] pb-4  lg:pb-10 mt-6 lg:mt-[32px] rounded-[30px] pl-3 md:pl-10 overflow-hidden  flex flex-col justify-end">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 via-60% to-black to-85% z-10"></div>
       {/* Background Image */}
      <div className="absolute inset-0 z-0">

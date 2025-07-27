@@ -39,7 +39,7 @@ const HostingCard = ({name,desc,price,packages,isPopular}) => {
        {
         packages.map((p,idx)=>(
            <p key={idx} className='flex items-center text-[#130D08] dark:text-[#fff] text-sm lg:text-base font-sans gap-2'> 
-           <span><Icons.checkMark/> </span>{p}</p>
+           <span className='text-[#616161] dark:text-[#EDEDED]'><Icons.checkMark/> </span>{p}</p>
         ))
        }
       </div>

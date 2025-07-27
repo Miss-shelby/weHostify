@@ -6,13 +6,13 @@ import { Icons } from '../../../../Icons'
 const ReferralProgram = () => {
   return (
     <div className="relative">
-        <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-14 lg:pt-28 relative  px-6 lg:px-16'>
+        <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
              <img className=' object-contain absolute opacity-65 w-[300px] lg:opacity-100 z-[0] right-0   lg:left-1/2 transform lg:-translate-x-1/2 top-0 lg:top-44' src={BGGRADIENT} alt='Yellow gradient'/>
             <div className="w-full z-20">
-                <p className="text-sm sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Referral Program</p>
-                <p className="text-xl lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Earn More by Sharing WeHostify</p>
+                <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Referral Program</p>
+                <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 text-center">Earn More by Sharing WeHostify</p>
                 <div className="">
-                    <p className="text-base sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-1 sm:pt-2 text-center">Our referral program lets you earn discounts, cash, or free hosting time 
+                    <p className="text-lg leading-tight sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 sm:pt-2 text-center">Our referral program lets you earn discounts, cash, or free hosting time 
                         <span className='lg:block'> every time someone signs up using your unique link.</span> </p>
                     <div className="bg-[#FFDD004D] rounded-[20px] p-4 mt-10">
                         <div className="flex justify-between w-full lg:items-center">
@@ -56,7 +56,7 @@ const ReferralProgram = () => {
                         <p className='text-lg text-[#616161] text-center dark:text-[#EDEDED]  font-sans font-medium'>Earn free rewards and  <span className='sm:block'> discounts  </span></p>
                     </div>
                   </div>
-                   <div className="mt-10 flex flex-col items-center justify-center">
+                   <div className="mt-6 lg:mt-10 flex flex-col items-center justify-center">
                         <FancyButton
                         text="Start Referring Now"
                         bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
