@@ -23,7 +23,7 @@ const HeroSection = () => {
           </div>
 
 
-          <p className="text-[#616161] text-xl md:text-[22px] lg:leading-[28px] dark:text-[#EDEDED] font-sans font-medium text-center lg:pt-[6px]">WeHostify powers your digital presence with reliable,
+          <p className="text-[#616161] text-lg  md:text-[22px] lg:leading-[28px] dark:text-[#EDEDED] font-sans font-medium text-center lg:pt-[6px]">WeHostify powers your digital presence with reliable,
             <span className="sm:block">secure hosting tailored for Africa’s digital revolution.</span> </p>
         <div className="flex items-center gap-5  lg:gap-10 mt-10">
             <FancyButton

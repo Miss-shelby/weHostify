@@ -18,7 +18,7 @@ const HostingPlans = () => {
         </div>
           <p className="text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Plans That Grow With You</p>
           <p className="text-2xl leading-tight sm:leading-normal lg:text-3xl font-bold text-[#130D08] py-1 dark:text-[#fff] lg:pt-2 text-center">Flexible Hosting Plans for Every Type of Project</p>
-          <p className="text-xl leading-tight sm:text-xl font-sans   font-medium text-[#616161] dark:text-[#EDEDED] sm:pt-3 text-center">WeHostify has a plan built just for you. Enjoy fast, secure hosting with  <span className="lg:block">unmatched local support.</span></p>
+          <p className="text-lg leading-tight sm:text-xl font-sans   font-medium text-[#616161] dark:text-[#EDEDED] sm:pt-3 text-center">WeHostify has a plan built just for you. Enjoy fast, secure hosting with  <span className="lg:block">unmatched local support.</span></p>
           <div className="grid items-center lg:grid-cols-3 md:px-10 lg:px-0 w-full gap-6 mt-6 sm:mt-10">
             {
               hostingPlans.map((plan,idx)=>(

@@ -14,9 +14,9 @@ const Empowerment = () => {
                 </div>
                <div className="w-full z-20">
                    <p className="text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Built to Support Visionaries and Changemakers</p>
-                   <p className="text-xl lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Empowering Local Change-Makers</p>
+                   <p className="text-2xl lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Empowering Local Change-Makers</p>
                    <div className="">
-                       <p className="text-base  mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 lg:pt-8 text-center"> At WeHostify, we believe that big impact starts with small ideas. That’s why we provide exclusive hosting <span className='md:block'>discounts, priority support, and custom web solutions to African-based SMEs and NGOs working to create  </span>
+                       <p className="text-lg leading-tight  mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 lg:pt-8 text-center"> At WeHostify, we believe that big impact starts with small ideas. That’s why we provide exclusive hosting <span className='md:block'>discounts, priority support, and custom web solutions to African-based SMEs and NGOs working to create  </span>
                           change in their communities. </p>
 
                        {/* <div className="relative w-full h-[700px] mt-[32px] rounded-[30px] pl-3 md:pl-10 overflow-hidden  flex flex-col justify-end">

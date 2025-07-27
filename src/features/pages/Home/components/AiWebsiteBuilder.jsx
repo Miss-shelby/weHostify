@@ -17,10 +17,10 @@ const AIWebsiteBuilder = () => {
           </div> */} 
             
             <div className="w-full z-20">
-                <p className="text-sm sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Describe It, and Watch Your Website Come to Life</p>
-                <p className="text-xl lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Let AI Build Your Website — No Tech Skills Needed</p>
+                <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Describe It, and Watch Your Website Come to Life</p>
+                <p className="text-2xl lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-2 text-center">Let AI Build Your Website — No Tech Skills Needed</p>
                 <div className="">
-                    <p className="text-base sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 text-center">With our smart AI website builder, all you have to do is tell us what your site is  <span className='lg:block'> about. We’ll generate a clean, responsive static web page in seconds. It’s fast,</span> it’s simple, and it just works. </p>
+                    <p className="text-lg leading-tight sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-2 text-center">With our smart AI website builder, all you have to do is tell us what your site is  <span className='lg:block'> about. We’ll generate a clean, responsive static web page in seconds. It’s fast,</span> it’s simple, and it just works. </p>
                     <div className="flex flex-col-reverse md:flex-row justify-between items-center mt-10 ">
                         <div className="bg-[#FFDD001A] py-6  px-5 rounded-[30px]">
                            <img className="object-contain lg:w-[600px]" src={WEBSITETEMPLATE}/>
