@@ -68,8 +68,8 @@ const WhatYouGet = () => {
             bgRadial="radial-gradient(50% 50% at 50% 50%, #FFDD00 0%, #FFDD00 100%)"
             textColor="#000"
             conicColor="rgba(255, 106, 0, 0.5)"
-            width="300px"
-                // width={isMobile ? "300px" : "400px"}
+            // width="300px"
+            width={isMobile ? "250px" : "400px"}
             height="55px"
             borderRadius="50px"
             animationSpeed="5s"
