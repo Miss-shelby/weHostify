@@ -23,7 +23,7 @@ const HomePage = () => {
       <HostingPlans/>
      <HostingAgents/>
      <Empowerment/>
-     <Test/>
+     {/* <Test/> */}
      <FlexiblePayment/>
      <ReferralProgram/>
      <AIWebsiteBuilder/>
