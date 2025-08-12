@@ -12,6 +12,8 @@ const FancyButton = ({
   borderRadius,
   animationSpeed,
   onClick,
+  extraClass,
+  icon
 }) => {
   // Set CSS custom properties dynamically
   const fancyStyle = {
@@ -27,7 +29,8 @@ const FancyButton = ({
 
   return (
     <div className="fancy" style={fancyStyle}>
-      <button onClick={onClick}>{text}</button>
+      <button className={`${extraClass}`} onClick={onClick}>{text}<span className="inline-flex  z-20 mr-1 ">{icon}</span>
+      </button>
     </div>
   );
 };
@@ -43,6 +46,7 @@ FancyButton.propTypes = {
   borderRadius: PropTypes.string,
   animationSpeed: PropTypes.string,
   onClick: PropTypes.func,
+ extraClass:PropTypes.string
 };
 
 FancyButton.defaultProps = {
@@ -55,6 +59,7 @@ FancyButton.defaultProps = {
   height: "75px",
   borderRadius: "50px",
   animationSpeed: "8s",
+  extraClass:""
 };
 
 export default FancyButton;

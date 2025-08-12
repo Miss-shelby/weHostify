@@ -1,4 +1,7 @@
-/* .move-right {
+.move-right {
   transform: translateX(-50%);
   -webkit-transform:translateX(-50%);
-} */
+    /* opacity: 0; */
+      /* transform: translateX(100px); */
+    transition: all 0.8s ease-in-out;
+}

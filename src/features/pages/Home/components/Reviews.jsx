@@ -9,7 +9,7 @@ const Reviews = () => {
         <p className="text-2xl leading-tight lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-2 text-center">Loved by Creators, Businesses & Organizations Alike</p>
         <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2 text-center">We want to build trust with you through real stories and experiences from happy <span className='lg:block'>  customers.</span></p>
              <img className=' object-contain hidden lg:block absolute z-20 top-28 right-60 opacity-40' src={BGGRADIENT} alt='Yellow gradient'/>
-             <img className=' object-contain absolute z-0 bottom-0 right-60 opacity-40' src={BGGRADIENT} alt='Yellow gradient'/>
+             <img className=' object-contain w-[300px] lg:hidden absolute z-0 bottom-[-100px] right-1/2 opacity-40' src={BGGRADIENT} alt='Yellow gradient'/>
            <div className="overflow-hidden mt-6 lg:mt-10 w-full">
              {/* Left fade overlay */}
                 {/* <div className="absolute left-0 top-0 h-full w-40 pointer-events-none z-10 "

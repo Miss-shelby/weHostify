@@ -1,12 +1,18 @@
+/* eslint-disable no-unused-vars */
 import { AFRICANWOMAN, GLOW } from "../../../../constants/assetexports";
 import FancyButton from "../../../shared/Buttons/FancyButton";
 import useIsMobile from "../../../shared/utils/isMobile";
 import TextRoller from "./TextRoller"
-
+import {motion} from "framer-motion"
 const HeroSection = () => {
    const isMobile = useIsMobile();
   return (
-    <div className="flex flex-col items-center w-ful justify-center pt-28 px-6 xl:px-0">
+    <motion.div
+    initial={{opacity:0,scale:0.8}}
+    whileInView={{opacity:1,scale:1}}
+    viewport={{once:true}}
+    transition={{duration:0.8,ease:'easeOut'}}
+     className="flex flex-col items-center w-ful justify-center pt-28 px-6 xl:px-0">
         <p className="text-[#616161] text-center font-sans text-base dark:text-[#EDEDED] ">Built in Africa. Made for the World.</p>
        <div className="hidden xs:flex flex-col lg:flex-row lg:gap-2 lg:pt-2 pt-1">
          <p className="text-[#130D08] text-center font-bold font-sans text-2xl  md:text-4xl   dark:text-[#FFFFFF]">Web Hosting with African Roots, Global</p>
@@ -97,7 +103,7 @@ const HeroSection = () => {
              <img src={AFRICANWOMAN} alt="african woman" className="object-contain " />
            </div>
         </div> */}
-    </div>
+    </motion.div>
   )
 }
 

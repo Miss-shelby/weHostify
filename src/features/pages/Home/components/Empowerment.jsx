@@ -1,24 +1,36 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { BGGRADIENT, GLOW, HOSTINGAGENT, IMAGEONE, IMAGETWO } from '../../../../constants/assetexports'
 import FancyButton from '../../../shared/Buttons/FancyButton'
 import CarouselHero from './Carousel/Partners'
-
+import {motion } from "framer-motion"
 const Empowerment = () => {
   return (
-    <div className="relative">
+    <motion.div
+    //   initial={{ scale: 0.95, opacity: 0 }}
+    //     whileInView={{ scale: 1, opacity: 1 }}
+    //     // viewport={{ once: true }}
+    //     transition= {{ duration: 0.4, ease: "easeInOut" }}
+     className="relative">
         <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
                <img className='hidden lg:block object-contain absolute z-[0] right-0 top-0 opacity-45' src={BGGRADIENT} alt='Yellow gardient'/>
                 <div className="absolute bottom-0 lg:w-[800px] lg:h-[800px]  lg:left-0   z-0 pointer-events-none opacity-45    ">
                     <img src={GLOW} alt="left-gradient glow"
-                        className=" object-cover w-full h-full  lg:translate-x-[-30%] lg:translate-y-[30%] translate-y-[65%]"/>
+                        className=" object-cover    lg:translate-x-[-30%] lg:translate-y-[30%] translate-y-[85%]"/>
                 </div>
                <div className="w-full z-20">
+                <motion.div
+                 initial={{ rotateX: -90, opacity: 0 }}
+                whileInView={{ rotateX: 0, opacity: 1 }}
+                viewport={{ once: true,amount:0.3 }}
+                transition= {{ duration: 0.6, ease: "easeInOut" }}
+                >
                    <p className="text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Built to Support Visionaries and Changemakers</p>
                    <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 text-center">Empowering Local Change-Makers</p>
-                   <div className="">
-                       <p className="text-lg leading-tight  mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-8 text-center"> At WeHostify, we believe that big impact starts with small ideas. That’s why we provide exclusive hosting <span className='md:block'>discounts, priority support, and custom web solutions to African-based SMEs and NGOs working to create  </span>
+                    <p className="text-lg leading-tight  mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-8 text-center"> At WeHostify, we believe that big impact starts with small ideas. That’s why we provide exclusive hosting <span className='md:block'>discounts, priority support, and custom web solutions to African-based SMEs and NGOs working to create  </span>
                           change in their communities. </p>
-
+                </motion.div>
+                   <div className="">
                        {/* <div className="relative w-full h-[700px] mt-[32px] rounded-[30px] pl-3 md:pl-10 overflow-hidden  flex flex-col justify-end">
                            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 via-60% to-black to-85% z-10"></div>
                            <div className="absolute inset-0  bg-[url('./assets/empowerBg.png')] bg-cover bg-center z-0"></div>
@@ -52,8 +64,8 @@ const Empowerment = () => {
                    </div>
                </div>
         </div>
-         <img className=' object-contain absolute z-[0] bottom-0 left-[-20px]' src={BGGRADIENT} alt='Yellow gradient'/>
-    </div>
+         <img className='hidden lg:block object-contain absolute z-[0] bottom-0 left-[-20px]' src={BGGRADIENT} alt='Yellow gradient'/>
+    </motion.div>
   )
 }
 

@@ -1,11 +1,18 @@
+/* eslint-disable no-unused-vars */
 import { GLOW } from "../../../../constants/assetexports"
 import { hostingPlans } from "../../../../data"
 import HostingCard from "./Cards/HostingCard"
-
+import {motion} from "framer-motion"
 
 const HostingPlans = () => {
   return (
-    <div className="relative">
+    <motion.div  
+    initial={{opacity:0,rotateX:"90deg"}}
+    whileInView={{opacity:1,rotateX:0}}
+    transition={{duration:1.5}}
+    viewport={{once:true, amount:0.6}}
+    style={{ transformStyle: "preserve-3d" }}
+    className="relative">
       <div className="xl:max-w-[1500px] mx-auto flex flex-col items-center justify-center pt-64 sm:pt-24 lg:mt-28 px-6 lg:px-14">
         <div className="absolute top-36 right-0  z-0 pointer-events-none opacity-55 overflow-hidden hidden lg:block ">
           <img src={GLOW} alt="glow"
@@ -14,7 +21,7 @@ const HostingPlans = () => {
         
         <div className="absolute bottom-0 lg:w-[800px] lg:h-[800px]  lg:left-0   z-0 pointer-events-none opacity-45    ">
           <img src={GLOW} alt="left-gradient glow"
-            className=" object-cover w-full h-full  lg:translate-x-[-30%] lg:translate-y-[30%] translate-y-[65%]"/>
+            className=" object-cover w-[300px] h-full  lg:translate-x-[-30%] lg:translate-y-[30%] translate-y-[70%]"/>
         </div>
           <p className="text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Plans That Grow With You</p>
           <p className="text-2xl leading-tight sm:leading-normal lg:text-3xl font-bold text-[#130D08] pt-1 dark:text-[#fff] lg:pt-2 text-center">Flexible Hosting Plans for Every Type of Project</p>
@@ -27,7 +34,7 @@ const HostingPlans = () => {
             }
           </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

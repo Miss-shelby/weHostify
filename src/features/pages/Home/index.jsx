@@ -1,6 +1,8 @@
 import ClipCard from "../../shared/Cards/ClipCard"
 import NavBar from "../../shared/NavBar"
 import AIWebsiteBuilder from "./components/AiWebsiteBuilder"
+import Test from "./components/Carousel/infiniteSlide"
+import Carousel from "./components/Carousel/infiniteSlide"
 import Empowerment from "./components/Empowerment"
 import Faq from "./components/Faq"
 import Features from "./components/Features"
@@ -21,7 +23,7 @@ const HomePage = () => {
       <HostingPlans/>
      <HostingAgents/>
      <Empowerment/>
-     {/* <Hero/> */}
+     <Test/>
      <FlexiblePayment/>
      <ReferralProgram/>
      <AIWebsiteBuilder/>
