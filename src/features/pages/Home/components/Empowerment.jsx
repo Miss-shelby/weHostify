@@ -6,11 +6,7 @@ import CarouselHero from './Carousel/Partners'
 import {motion } from "framer-motion"
 const Empowerment = () => {
   return (
-    <motion.div
-    //   initial={{ scale: 0.95, opacity: 0 }}
-    //     whileInView={{ scale: 1, opacity: 1 }}
-    //     // viewport={{ once: true }}
-    //     transition= {{ duration: 0.4, ease: "easeInOut" }}
+    <div
      className="relative">
         <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
                <img className='hidden lg:block object-contain absolute z-[0] right-0 top-0 opacity-45' src={BGGRADIENT} alt='Yellow gardient'/>
@@ -65,7 +61,7 @@ const Empowerment = () => {
                </div>
         </div>
          <img className='hidden lg:block object-contain absolute z-[0] bottom-0 left-[-20px]' src={BGGRADIENT} alt='Yellow gradient'/>
-    </motion.div>
+    </div>
   )
 }
 

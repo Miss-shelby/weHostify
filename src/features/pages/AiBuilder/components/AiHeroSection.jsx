@@ -16,11 +16,11 @@ const AiHeroSection = () => {
           
           <div className="flex flex-col items-center justify-center w-full text-center">
               <motion.div   initial={{ rotateY: 90, opacity: 0 }} whileInView= {{ rotateY: 0, opacity: 1 }} transition={{ duration: 0.6,delay:0.4 }}
-                  viewport={{ once: true,amount:"all"}} className="  ">
+                  viewport={{ once: true,amount:"all"}} className=" ">
                     <p className="text-base text-[#616161] text-center  dark:text-[#EDEDED] font-sans ">AI Website Builder</p>
                     <p className="text-2xl leading-tight lg:text-3xl font-bold text-center font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-0">No coding. No design <span className="text-[#FF6A00]">expertise. </span>Just your ideas, turned into a  <span className="lg:block">beautiful,responsive <span className="text-[#007BFF]">websites</span> </span> </p> 
                     <p className="text-lg leading-tight lg:text-xl  text-center  mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2">Launch fast — choose from 200+ templates, get AI-generated content, optimize for <span className="lg:block">from concept to final launch. </span></p>
-                    <div className='flex flex-col lg:flex-row w-full relative items-stretch lg:mt-[50px] gap-5'>
+                    <div className='flex flex-col lg:flex-row w-full relative items-stretch mt-6 lg:mt-[50px] gap-5'>
                       <div>
                         <img src={WEBSITEBUILDERHEROIMAGE1} className='z-10 ' alt='A scientist '/>
                       </div>
@@ -31,14 +31,16 @@ const AiHeroSection = () => {
                         </div>
                         <AICard/>
                       </div>
-                      <div className='flex flex-col z-10 items-start '>
-                        <img src={WEBSITEBUILDERHEROIMAGE2} className='object-cover dark:hidden flex justify-start w-[500px]' alt='A scientist '/>
-                        <img src={HEROIMAGEDARKMODE} className='object-cover hidden dark:flex justify-start w-[500px]' alt='A scientist '/>
-                        <div className=''>
-                    <FancyButton extraClass="flex items-center justify-center gap-2" icon={<Icons.stars/>} text="Generate Website" bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
+                      <div className='flex flex-col z-10  items-start justify-start '>
+                       <div className='w-full'>
+                           <img src={WEBSITEBUILDERHEROIMAGE2} className='object-fill scale-[1.14] block  w-[450px]  dark:hidden  ' alt='A scientist '/>
+                        <img src={HEROIMAGEDARKMODE} className='object-fill scale-[1.14]  hidden dark:block w-[450px]' alt='A scientist '/>
+                       </div>
+                        <div className='w-full mt-6'>
+                    <FancyButton extraClass="flex items-center justify-center gap-2 w-full" icon={<Icons.stars/>} text="Generate Website" bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
                       bgRadial="radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%)" textColor="#fff"
                       conicColor="rgba(255, 221, 0, 0.5)" width={isMobile?"250px":"500px"}
-                      height="70px" borderRadius="50px" animationSpeed="5s" onClick={() => alert("Clicked!")}/>
+                      height="68px" borderRadius="50px" animationSpeed="5s" onClick={() => alert("Clicked!")}/>
                   </div>
                       </div>
                     </div>
@@ -80,8 +82,8 @@ const AICard =()=>{
 const Features =()=>{
   return (
     <div className='border-t border-[#909090] border-b mt-20 '>
-      <div className='xl:max-w-[1500px] md:max-w-[52rem]  lg:max-w-full  gap-10  w-full  mx-auto grid grid-cols-3  relative  px-6 md:px-4  lg:px-16'>
-        <div className='flex flex-col  border-r border-[#909090] py-10 pr-10'>
+      <div className='xl:max-w-[1500px] md:max-w-[52rem]  lg:max-w-full  lg:gap-10  w-full  mx-auto grid grid-cols-1 lg:grid-cols-3  relative  px-6 md:px-4  lg:px-16'>
+        <div className='flex flex-col  lg:border-r border-[#909090] py-6 lg:py-10 pr-10'>
           <Icons.storage className="dark:hidden"/>
            <Icons.builderDarkMode className="hidden dark:block"/>
           <div className='flex items-center w-full justify-between'>
@@ -93,7 +95,7 @@ const Features =()=>{
           </div>
            <p className='text-base text-[#909090] dark:text-[#9C9B9B] pt-5 font-sans '>Over 1,000 GB available</p>
         </div>
-         <div className='flex flex-col border-r border-[#909090] pr-10 py-10'>
+         <div className='flex flex-col lg:border-r border-[#909090] pr-10 py-6 lg:py-10'>
           <Icons.builder className=""/>
          
           <div className='flex items-center w-full justify-between'>
@@ -105,7 +107,7 @@ const Features =()=>{
           </div>
            <p className='text-base text-[#909090] dark:text-[#9C9B9B] pt-5 font-sans '> A range of hundreds of pre-made, high-quality templates.</p>
         </div>
-         <div className='flex flex-col py-10'>
+         <div className='flex flex-col py-6 lg:py-10'>
           <Icons.editor/>
           <div className='flex items-center w-full justify-between'>
             <div>

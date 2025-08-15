@@ -83,11 +83,7 @@ const item = {
                             <p className='font-light text-[#FFFFFF] text-lg text-center font-sans'>Make credit card payment  <span className='block'></span>using PayStack</p>
                         </motion.div>
                         </motion.div>
-                    <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: true,amount:0.3 }}
-                    transition={{ duration: 2,delay:1 }}
+                    <div
                      className="dark:bg-[#18183A] bg-[linear-gradient(94.18deg,_#1A1715_0.87%,_#000000_98.72%)] dark:bg-none relative h-[200px] lg:h-[300px] mt-[26px] flex flex-col justify-center  rounded-[24px]">
                         <img src={LEFTBOTTOMLINE} className="w-[100px] lg:w-fit absolute object-contain bottom-0 left-0 z-0" alt="decorative line"/>
                         <img src={DECORATIVECENTERLINE} className="w-[100px] lg:w-fit absolute object-contain bottom-0 left-1/3 " alt="decorative line"/>
@@ -104,7 +100,7 @@ const item = {
                         </div>
                         </div>
                         
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </div>

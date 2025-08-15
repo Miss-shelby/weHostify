@@ -6,7 +6,7 @@ import useIsMobile from "../../../shared/utils/isMobile";
 const Steps = () => {
      const isMobile = useIsMobile();
   return (
-    <div className='xl:max-w-[1500px]  overflow-x-clip lg:max-w-full md:max-w-3xl  mx-auto flex flex-col  justify-center pt-20 lg:pt-20 w-full  relative  px-6 lg:px-16'>
+    <div className='xl:max-w-[1500px]   lg:max-w-full md:max-w-3xl  mx-auto flex flex-col  justify-center pt-20 lg:pt-20 w-full  relative  px-6 lg:px-16'>
          <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">How to Apply for the Student Discount</p>
         <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-0 text-center">Easy Steps to Unlock Your Student Hosting Deal</p>
         <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2 text-center">We’ve kept the process simple and secure — just send us a few details, and we’ll set up <span className='lg:block'>your account so you can launch in no time.  </span></p>

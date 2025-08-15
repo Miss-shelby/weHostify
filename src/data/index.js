@@ -254,28 +254,88 @@ export const footerItems=[
         title:'PRODUCTS',
         textColor:"#FF6A00",
         items:[
-            'Services', 'Cpanel Hosting','Domain Registration','Direct Admin Hosting','AI Website Builder'
+            {
+                name:"Services",
+                path:"#"
+            },
+             {
+                name:"Cpanel Hosting",
+                path:"#"
+            },
+            {
+                name:"Domain Registration",
+                path:"#"
+            },
+            {
+                name:"Direct Admin Hosting",
+                path:"#"
+            },
+            {
+                name:"AI Website Builder",
+                path:"/website-builder"
+            },
+           
         ]
     },
      {
         title:'COMPANY',
         textColor:"#FF6A00",
         items:[
-            'About WeHostify', 'Privacy Policy','Terms of Service','Student Discount','Hire an expert','African Business Discount'
+            {
+                name:"About WeHostify",
+                path:"/about"
+            },
+            {
+                name:"Privacy Policy",
+                path:"/privacy-policy"
+            },
+            {
+                name:"Terms of Service",
+                path:"/terms"
+            },
+             {
+                name:"Student Discount",
+                path:"/student"
+            },
+            {
+                name:"Hire an expert",
+                path:"/hire"
+            },
+            {
+                name:"African Business Discount",
+                path:"/african-businesses"
+            }
+           
         ]
     },
       {
         title:'VPS',
         textColor:"#BF5540",
         items:[
-            'Linux Cloud Server', 'Windows Cloud Server',
+            {
+                name:"Linux Cloud Server",
+                path:"#"
+            },
+            {
+                name:"Windows Cloud Server",
+                path:"#"
+            }
+            
         ]
     },
     {
         title:'Support',
         textColor:"#BF5540",
         items:[
-            'Contact Us', 'Support Ticket',
+             {
+                name:"Contact Us",
+                path:"/contact"
+            },
+            {
+                name:"Support Ticket",
+                path:"#"
+            }
+           
         ]
     }
 ]

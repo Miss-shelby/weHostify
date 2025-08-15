@@ -22,11 +22,7 @@ const ReferralProgram = () => {
                         <span className='lg:block'> every time someone signs up using your unique link.</span> </p>
                 </motion.div>
                 <div className="">
-                        <motion.div 
-                        initial={{ x: -100, rotate: -10, opacity: 0 }}
-                        whileInView={{ x: 0, rotate: 0, opacity: 1 }}
-                        viewport={{ once: true,amount:0.3 }}
-                        transition={{ duration: 2 }}
+                        <div 
                         className="bg-[#FFDD004D] rounded-[20px] p-4 mt-6 lg:mt-10">
                         <div className="flex justify-between w-full lg:items-center">
                             <div className="">
@@ -36,7 +32,7 @@ const ReferralProgram = () => {
                             </div>
                             <img className='object-contain w-[118px] md:w-[250px]' src={GIFTBOX} alt='Gift box'/>
                         </div>
-                    </motion.div>
+                    </div>
                   <div className="grid relative lg:grid-cols-5 mt-6 lg:mt-10">
                     <motion.div
                      whileInView={{ scale: [1, 1.2, 1] }}

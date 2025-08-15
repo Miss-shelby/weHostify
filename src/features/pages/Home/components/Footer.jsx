@@ -4,6 +4,7 @@ import { LOGO } from "../../../../constants/assetexports"
 import { Icons } from "../../../../Icons"
 import { footerItems } from "../../../../data";
 import {motion } from "framer-motion"
+import { Link } from "react-router";
 const Footer = () => {
        const [openIndex, setOpenIndex] = useState([]); // store multiple open indexes
 
@@ -39,12 +40,12 @@ const Footer = () => {
                         {
                             item.items.map((i,index)=>(
                                 <div key={index} className="">
-                                    <li  className="text-sm hidden lg:block font-light text-[#FFFFFF]">{i}</li>
+                                    <Link to={i.path}  className="text-sm hidden lg:block font-light text-[#FFFFFF]">{i.name}</Link>
                                     {/* mobile toggle  */}
                                     <div className={`lg:hidden flex flex-col   overflow-hidden transition-all duration-300 ease-in-out ${
                                         openIndex.includes(idx) ? "max-h-40 mt-2 opacity-100" : "max-h-0 opacity-0"
                                         }`} >
-                                        <p className="font-light text-[#FFFFFF] font-sans pt-2 text-xs ">{i}</p>
+                                        <p className="font-light text-[#FFFFFF] font-sans pt-2 text-xs ">{i.name}</p>
                                     </div>
 
                                 </div>

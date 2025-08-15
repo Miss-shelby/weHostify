@@ -4,6 +4,8 @@ import { ServicesCard } from '../../Home/components/Cards/FeatureCard'
 
 const SpecialBenefits = () => {
   return (
+    <div className='relative overflow-x-clip'>
+           <img className=' object-contain hidden lg:block  absolute right-0 w-[500px] translate-x-[30%]  z-0 top-0  opacity-70' src={BGGRADIENT} alt='Yellow gradient'/>
      <div className='xl:max-w-[1500px] lg:max-w-full md:max-w-3xl overflow-hidden z-10 mx-auto flex flex-col items-center justify-center pt-20 lg:pt-20  relative  px-6 lg:px-16'>
              <img className=' object-contain  lg:hidden absolute translate-y-[-10%]   z-0 top-1/2 left-1/3 opacity-70' src={BGGRADIENT} alt='Yellow gradient'/>
              <div className="z-20">
@@ -11,14 +13,15 @@ const SpecialBenefits = () => {
             <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-0 text-center">Special Benefits for Local Innovators</p>
             <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2 text-center">Our business package combines powerful tools and generous benefits to help you get  <span className='lg:block'>online quickly and affordably.</span></p>
              </div>
-                 <img className=' object-contain hidden lg:block absolute right-0 w-[500px] translate-x-[30%]  z-0 top-0  opacity-70' src={BGGRADIENT} alt='Yellow gradient'/>
+              
                 
                     <div className="flex flex-col md:flex-row justify-between items-stretch w-full gap-5 lg:gap-12 z-10 pt-6 lg:pt-10 ">
                        <BenefitCard/>
                        <BenefitCardTwo/>
                     </div>
            
-        </div>
+    </div>
+    </div>
   )
 }
 

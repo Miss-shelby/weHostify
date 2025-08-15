@@ -7,7 +7,8 @@ import { FeaturesCard, KeyFeaturesCard, ServicesCard } from '../../Home/componen
 import { Icons } from '../../../../Icons'
 const KeyFeatures = () => {
   return (
-    <>
+    <div className='relative overflow-x-clip'>
+        <img className=' object-contain hidden lg:block translate-x-[20%] absolute z-[0] right-0 top-[10%] opacity-70' src={BGGRADIENT} alt='Yellow gradient'/>
     <div className='xl:max-w-[1500px] overflow-clip  mx-auto flex flex-col items-start justify-start pt-20   relative  px-6 lg:px-16'>
         <div>
             <p className="text-base sm:text-base text-[#616161] text-center sm:text-left dark:text-[#EDEDED] font-sans ">Key Features</p>
@@ -43,7 +44,7 @@ const KeyFeatures = () => {
                          
                 </div>
             </motion.div>
-             <img className=' object-contain hidden lg:block translate-x-[20%] absolute z-[0] right-0 top-[10%] opacity-70' src={BGGRADIENT} alt='Yellow gradient'/>
+             
             <div className="grid xl:max-w-3xl sm:px-0 lg:grid-cols-2 grid-rows-2 gap-6 z-10 relative">
                 {
                     keyFeatures.map((f,idx)=>(
@@ -56,7 +57,7 @@ const KeyFeatures = () => {
         <img src={GLOW} alt="right-gradient glow"
         className="absolute   hidden  bottom-[-100px] h-[300px] w-[300px] z-0 transform opacity-55   object-cover   left-1/2"/>
     </div>
-    </>
+    </div>
   )
 }
 
