@@ -1,4 +1,4 @@
-import { AFRICANWOMAN, BGONE, BTCGIRL, DISCOUNTIMAGE1, DISCOUNTIMAGE2, DISCOUNTIMAGE3, DISCOUNTIMAGE4, DISCOUNTIMAGE5, IMAGEONE, IMAGETWO, LIGHTING, MIGRATION, PROFILEIMG, SECURE, SUPPORT } from "../constants/assetexports";
+import { AFRICANWOMAN, BGONE, BTCGIRL, CAROUSELBG2, CAROUSELBG3, CAROUSELBG4, CAROUSELIMAGE1, CAROUSELIMAGE2, CAROUSELIMAGE3, CAROUSELIMAGE4, CAROUSELIMAGE5, DISCOUNTIMAGE1, DISCOUNTIMAGE2, DISCOUNTIMAGE3, DISCOUNTIMAGE4, DISCOUNTIMAGE5, IMAGEONE, IMAGETWO, LIGHTING, MIGRATION, PROFILEIMG, SECURE, SUPPORT } from "../constants/assetexports";
 import { Icons } from "../Icons";
 
 
@@ -376,51 +376,44 @@ export const slides = [
   {
     id: 1,
     bg: BGONE,
-    title: "Activa8 Hub",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quod nulla cumque fugit nostrum quis cupiditate adipisci ad maxime facere. Adipisci nesciunt maiores dignissimos saepe. Odit eos possimus, dolorem laboriosam odio consectetur mollitia nesciunt necessitatibus. Ipsa quibusdam numquam molestias cupiditate quod deserunt officiis veritatis error exercitationem explicabo! Omnis, nisi nobis!",
-    thumb: IMAGEONE,
+    title: "Nawe Schools",
+    description: "Where creativity meets code. Nawe empowers young African developers and designers to build the future through hands-on mentorship, community, and real-world projects.",
+    thumb: CAROUSELIMAGE1,
     secondaryThumb: BTCGIRL,
   },
   {
     id: 2,
-    bg: IMAGEONE,
-    title: "Future Builders",
+    bg:AFRICANWOMAN,
+    title: "Activa8 Hub",
     description: "n this article, we’ll explore 40 creative CSS text animations featuring ten custom animations I've personally created, plus 30 additional hand-picked examples from talented CodePen creators. Each one comes with a live demo and code, so you can dive in and try them out. Let’s get started!!",
-    thumb: IMAGETWO,
+    thumb: CAROUSELIMAGE2,
     secondaryThumb: BTCGIRL,
   },
     {
     id: 3,
     bg: BGONE,
-    title: "chyco",
+    title: "WebStack",
     description: "In this listicle, we won’t just be exploring the 40 examples. We’ll also look at the technologies and the core CSS principles used for each one. Let’s start by checking out 10 custom examples. After that, we’ll see 30 others created by developers across the web.",
-    thumb: IMAGEONE,
+    thumb: CAROUSELIMAGE3,
     secondaryThumb: BTCGIRL,
   },
      {
     id: 4,
     bg: IMAGEONE,
-    title: "Ammie",
+    title: "Kodex",
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quod nulla cumque fugit nostrum quis cupiditate adipisci ad maxime facere. Adipisci nesciunt maiores dignissimos saepe. Odit eos possimus, dolorem laboriosam odio consectetur mollitia nesciunt necessitatibus. Ipsa quibusdam numquam molestias cupiditate quod deserunt officiis veritatis error exercitationem explicabo! Omnis, nisi nobis!",
-    thumb:AFRICANWOMAN ,
+    thumb:CAROUSELIMAGE4 ,
     secondaryThumb: IMAGEONE,
   },
    {
     id: 5,
-    bg: BGONE,
-    title: "chyco2",
+    bg:BGONE ,
+    title: "Poise Royale",
     description: "In this listicle, we won’t just be exploring the 40 examples. We’ll also look at the technologies and the core CSS principles used for each one. Let’s start by checking out 10 custom examples. After that, we’ll see 30 others created by developers across the web.",
-    thumb: IMAGEONE,
+    thumb: CAROUSELIMAGE5,
     secondaryThumb: BTCGIRL,
   },
-    {
-    id: 6,
-    bg: BGONE,
-    title: "Activa8 Hub2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quod nulla cumque fugit nostrum quis cupiditate adipisci ad maxime facere. Adipisci nesciunt maiores dignissimos saepe. Odit eos possimus, dolorem laboriosam odio consectetur mollitia nesciunt necessitatibus. Ipsa quibusdam numquam molestias cupiditate quod deserunt officiis veritatis error exercitationem explicabo! Omnis, nisi nobis!",
-    thumb: IMAGEONE,
-    secondaryThumb: BTCGIRL,
-  },
+
 
 ];
 

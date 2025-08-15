@@ -20,7 +20,7 @@ const HostingAgents = () => {
             <p className="text-2xl leading-tight lg:text-3xl font-bold text-[#130D08] dark:text-[#fff] pt-1 text-center">Your 24/7 Personal Hosting Agent</p>
             <p className="text-lg leading-tight font-sans  font-medium text-[#616161] dark:text-[#EDEDED] pt-3 text-center"> Once you subscribe to more than one hosting plan, or upgrade to the <span className="lg:block">Platinum Plan, you can skip the ticket system. Get assigned to a </span> <span className='lg:block'>dedicated WeHostify agent.</span></p>
             </motion.div>
-            <div className="flex flex-col xl:flex-row w-full justify-between pt-6 sm:pt-10 items-start ">
+            <div className="flex flex-col xl:flex-row w-full justify-between lg:gap-6 pt-6 sm:pt-10 items-start ">
                 <motion.div 
                 initial={{ opacity: 0,translateX:"-100%"}}
                 whileInView={{ opacity: 1,translateX:0 }}

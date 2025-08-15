@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { BGGRADIENT, FLAG, LIGHTMODE, LOGO, NIGHTMODE } from '../../constants/assetexports'
 import { navLinks } from '../../data'
 import Button from './Button'
@@ -16,6 +16,27 @@ const NavBar = ({yellowBg=false}) => {
   const [darkMode,setDarkMode] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false);
 const isMobile = useIsMobile()
+
+const menuRef = useRef(null);
+
+  useEffect(() => {
+    if (!menuRef.current) return;
+
+    let scrollTimeout;
+    const menu = menuRef.current;
+
+    const handleScroll = () => {
+      menu.classList.add("scrolling");
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        menu.classList.remove("scrolling");
+      }, 1000); // hide after 1 second of no scroll
+    };
+
+    menu.addEventListener("scroll", handleScroll);
+    return () => menu.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleDarkmode = ()=>{
     document.documentElement.classList.toggle('dark');
    setDarkMode((prev) => !prev);
@@ -79,14 +100,16 @@ const isMobile = useIsMobile()
           {/* on open menu  */}
             {menuOpen && (
               <motion.div
+               ref={menuRef}
+
                initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                className=" fixed top-[70px] left-0 w-full  h-full overflow-y-auto
+                className=" fixed top-[70px] left-0 w-full mobile-menu  h-[calc(100vh-70px)]  overflow-y-auto
                  bg-[#F1F0EC] dark:bg-[#070712] flex flex-col px-6  z-50
                     ">
-                <ul className="flex xl:hidden flex-col h-full overflow-y-auto mt-4 gap-[25px] text-[#130D08] dark:text-[#fff] font-medium text-base cursor-pointer font-sans">
+                <ul className="flex xl:hidden flex-col  mt-4 gap-6 text-[#130D08] dark:text-[#fff] font-medium text-base cursor-pointer font-sans">
                   {navLinks.map((nav, idx) => (
                     <>
                       <Link to={nav.path} key={idx} className="flex items-center w-full justify-between "
@@ -105,7 +128,9 @@ const isMobile = useIsMobile()
                   </li>
                     <li className='flex items-center gap-2'>
                       <img onClick={toggleDarkmode} className="object-contain h-10 w-10  cursor-pointer px-2"  src={darkMode ? LIGHTMODE : NIGHTMODE}  alt="Night mode"/> 
-                      <span className='text-[#130D08] font-medium font-sans text-base dark:text-[#FFFFFF]'>Dark Mode</span>
+                        <span className='text-[#130D08] font-medium font-sans text-base dark:text-[#FFFFFF]'>
+                       {darkMode? "Light Mode":" Dark Mode"}</span>
+
                   </li>
                   <li className='flex flex-col items-center md:items-start mt-10 pb-4'>
                     <FancyButton

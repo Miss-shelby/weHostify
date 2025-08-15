@@ -6,6 +6,41 @@ body {
   font-family: 'DM Sans', sans-serif;
  
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mobile-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.mobile-menu::-webkit-scrollbar-track {
+  background: transparent;
+    height: 10px !important;
+}
+
+.mobile-menu::-webkit-scrollbar-thumb {
+  background-color: #FF6A00; 
+  border-radius: 8px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  height: 10px !important;
+}
+
+/* Firefox scrollbar */
+.mobile-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #FF6A00 transparent;
+
+}
+
+/* When scrolling (JS will add this class) */
+.mobile-menu.scrolling::-webkit-scrollbar-thumb {
+  opacity: 1; /* Show thumb */
+    height: 10px !important;
+}
 /* *{
   border:1px solid black;
 } */

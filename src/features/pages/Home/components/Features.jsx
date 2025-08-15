@@ -7,7 +7,7 @@ import {motion} from "framer-motion"
 const Features = () => {
   return (
     <>
-    <div className='xl:max-w-[1500px] overflow-x-hidden  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28  relative  px-6 lg:px-16'>
+    <div className='xl:max-w-[1500px] overflow-hidden  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28  relative  px-6 lg:px-16'>
         
         <div className="flex flex-col xl:flex-row items-center justify-between w-full ">
             <motion.div 

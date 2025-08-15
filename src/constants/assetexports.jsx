@@ -87,6 +87,15 @@ import WEBSITETEMPLATE5 from "../assets/website-templates-img (5).png"
 import WEBSITETEMPLATE6 from "../assets/website-templates-img (6).png"
 import SCREENSHOT1 from "../assets/screenshot (1).png"
 import SCREENSHOT2 from "../assets/screenshot (2).png"
+import CAROUSELIMAGE1 from "../assets/carousel-small-image (1).jpg"
+import CAROUSELIMAGE2 from "../assets/carousel-small-image (2).jpg"
+import CAROUSELIMAGE3 from "../assets/carousel-small-image (3).jpg"
+import CAROUSELIMAGE4 from "../assets/carousel-small-image (4).jpg"
+import CAROUSELIMAGE5 from "../assets/carousel-small-image (5).jpg"
+import CAROUSELBG2 from "../assets/carousel-bg (1).jpg"
+import CAROUSELBG3 from "../assets/carousel-bg (2).jpg"
+import CAROUSELBG4 from "../assets/carousel-bg (3).jpg"
+import CAROUSELBG5 from "../assets/carousel-bg (4).jpg"
 export {
     LOGO,
     FLAG,
@@ -176,6 +185,15 @@ export {
     WEBSITETEMPLATE5,
     WEBSITETEMPLATE6,
     SCREENSHOT1,
-    SCREENSHOT2
+    SCREENSHOT2,
+    CAROUSELIMAGE1,
+    CAROUSELIMAGE2,
+    CAROUSELIMAGE3,
+    CAROUSELIMAGE4,
+    CAROUSELIMAGE5,
+    CAROUSELBG2,
+    CAROUSELBG3,
+    CAROUSELBG4,
+    CAROUSELBG5
 
 }
