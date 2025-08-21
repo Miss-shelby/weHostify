@@ -45,6 +45,22 @@ html {
   border:1px solid black;
 } */
 
+ /* .card_one:hover {
+  border-style: solid;
+  border-width: 5px;
+  border-image-slice: linear-gradient(to bottom, #44D9FE, transparent) 1 stretch;
+  border-radius: 30px;
+} */
+
+.card_one:hover {
+  position: relative;
+  border-radius: 30px;
+  border: 5px solid transparent; 
+  background-clip: padding-box;
+  cursor: pointer;
+  border-image: linear-gradient(to top, #44D9FE, transparent) 1;
+  border-image-slice: 1;
+}
 
 /* NAVBAR  */
 .bg-yellow-trans {

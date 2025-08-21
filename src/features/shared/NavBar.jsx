@@ -112,11 +112,13 @@ const menuRef = useRef(null);
                 <ul className="flex xl:hidden flex-col  mt-4 gap-6 text-[#130D08] dark:text-[#fff] font-medium text-base cursor-pointer font-sans">
                   {navLinks.map((nav, idx) => (
                     <>
-                      <Link to={nav.path} key={idx} className="flex items-center w-full justify-between "
+                      <Link to={nav.path} key={idx} className={` ${location.pathname == nav.path ?"active":"" } 
+                        flex items-center w-full justify-between `}
                         onClick={() => setMenuOpen(false)}  >
                         {nav.title}
                         <div>
-                          { darkMode?<Icons.moreIconDarkMode/> :<Icons.moreIcon/>}
+                          { darkMode?<Icons.moreIconDarkMode className={`${location.pathname == nav.path?"text-orange-500 ":"text-white"}`} />
+                           :<Icons.moreIcon className={`${location.pathname == nav.path?"text-orange-500 ":"text-[#130D08] "}`}/>}
                         </div>
                       </Link>
                     </>

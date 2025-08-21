@@ -35,7 +35,7 @@ const HostingAgentCard = () => {
                 clipPath="M360 165.254C360 180.386 347.733 192.653 332.6 192.653H200.344C191.93 192.653 183.982 196.519 178.788 203.139L125.921 270.514C120.727 277.134 112.779 281 104.365 281H27.3996C12.2672 281 0 268.733 0 253.6V27.3996C0 12.2672 12.2672 0 27.3996 0H332.6C347.733 0 360 12.2672 360 27.3996V165.254Z"/>
             </motion.div>
         </div>
-        <div className='flex gap-8 mt-10 items-center w-full'>
+        <div className='flex gap-8 flex-col md:flex-row mt-10 items-center w-full'>
             <motion.div 
                  initial={{ clipPath: "inset(100% 0 0 0)" }}
                 whileInView={{ clipPath: "inset(0 0 0 0)" }}
@@ -66,7 +66,7 @@ const HostingAgentCard = () => {
 
     {/* mobile cards here  */}
     <div className="block mt-6 md:hidden ">
-        <div className="flex flex-col  xs:gap-6 items-center justify-center ">
+        <div className="flex flex-col sm:items-start  xs:gap-6 items-center justify-center ">
              <motion.div  initial={{ clipPath: "inset(100% 0 0 0)" }}
                 whileInView={{ clipPath: "inset(0 0 0 0)" }}
                 transition={{ duration: 1,delay:0 }}

@@ -96,6 +96,10 @@ import CAROUSELBG2 from "../assets/carousel-bg (1).jpg"
 import CAROUSELBG3 from "../assets/carousel-bg (2).jpg"
 import CAROUSELBG4 from "../assets/carousel-bg (3).jpg"
 import CAROUSELBG5 from "../assets/carousel-bg (4).jpg"
+import WEBSITEBUILDERMOBILE from "../assets/website-builder-mobile.png"
+import WEBSITEBUILDERMOBILE2 from "../assets/website-builder2-mobile.png"
+import WEBSITEBUILDERDARKMOBILE from "../assets/BuilderMobileDark (1).png"
+import WEBSITEBUILDERDARKMOBILE2 from "../assets/BuilderMobileDark (2).png"
 export {
     LOGO,
     FLAG,
@@ -194,6 +198,10 @@ export {
     CAROUSELBG2,
     CAROUSELBG3,
     CAROUSELBG4,
-    CAROUSELBG5
+    CAROUSELBG5,
+    WEBSITEBUILDERMOBILE,
+    WEBSITEBUILDERMOBILE2,
+    WEBSITEBUILDERDARKMOBILE,
+    WEBSITEBUILDERDARKMOBILE2
 
 }

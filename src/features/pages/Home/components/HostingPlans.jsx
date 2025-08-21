@@ -8,7 +8,7 @@ const HostingPlans = () => {
   return (
     <div  
     className="relative">
-      <div className="xl:max-w-[1500px] mx-auto flex flex-col items-center justify-center pt-64 sm:pt-24 lg:mt-28 px-6 lg:px-14">
+      <div className="xl:max-w-[1500px] mx-auto lg:max-w-full md:max-w-3xl flex flex-col items-center justify-center pt-64 sm:pt-24 lg:mt-28 px-6 lg:px-14">
         <div className="absolute top-36 right-0  z-0 pointer-events-none opacity-55 overflow-hidden hidden lg:block ">
           <img src={GLOW} alt="glow"
             className=" object-cover w-full h-full  translate-x-1/4 "/>

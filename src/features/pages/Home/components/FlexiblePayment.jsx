@@ -20,21 +20,21 @@ const item = {
   hidden: { opacity: 0, y: 50 },
   show: { opacity: 1, y: 0 },
 };
-
+// initial={{filter:"blur(10px)",opacity:0,y:12}}
+//                     whileInView={{filter:"blur(0)",opacity:1,y:0}}
+//                    viewport={{ once: true, amount:0.3 }}
+//                     transition={{duration:2}}
   return (
     <div className="relative">
         <div className='xl:max-w-[1500px]  mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
             <img className=' object-contain hidden w-[350px] h-[350px] lg:hidden absolute z-[0] right-0 top-0 opacity-25' src={BGGRADIENT} alt='Yellow gradient'/>
             <div className="w-full z-20">
-                <motion.div initial={{filter:"blur(10px)",opacity:0,y:12}}
-                    whileInView={{filter:"blur(0)",opacity:1,y:0}}
-                   viewport={{ once: true, amount:0.3 }}
-                    transition={{duration:2}}>
+                <div >
                     <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Pay Your Way — Without the Stress</p>
                     <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 text-center">Flexible Payment Options for Everyone</p>
                     <p className="text-lg leading-tight sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 text-center">WeHostify lets you pay using the methods that work best for you — from
                     <span className='lg:block'> local bank transfers to global payment gateways. No complications,</span>  no hidden fees. </p>
-                </motion.div>
+                </div>
                 <div className="">
                         <motion.div variants={container} initial="hidden" whileInView="show"
                         viewport={{ once: true, amount: 0.3 }}

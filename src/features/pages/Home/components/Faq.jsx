@@ -13,7 +13,8 @@ const Faq = () => {
   return (
     <div className="relative">
         <div className="absolute overflow-hidden top-[600px] lg:top-[270px] right-0   z-0 pointer-events-none opacity-55 block ">
-          <img src={GLOW} alt="glow"className=" object-cover lg:w-[667px] lg:h-[644px] translate-x-[20%] lg:-translate-y-[10%]  h-full right-0 w-[350px]  "/>
+          <img src={GLOW} alt="glow"className=" object-cover lg:w-[667px] lg:h-[644px] translate-x-[20%] lg:-translate-y-[10%] 
+           h-full right-0 w-[350px]  "/>
         </div>
         <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
             <div

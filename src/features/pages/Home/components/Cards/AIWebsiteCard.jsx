@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 const AIWebsiteCard = () => {
   return (
     <>
-    <div className='hidden lg:block'>
+    <div className='hidden md:block'>
     <div className='flex md:flex-row   gap-8 items-center w-full'>
         <motion.div
         initial={{ clipPath: "inset(100% 0 0 0)" }}
@@ -62,8 +62,8 @@ const AIWebsiteCard = () => {
     </div>
     </div>
     {/* mobile cards here  */}
-    <div className="block lg:hidden">
-        <div className="flex flex-col xs:gap-6 items-center justify-center">
+    <div className="block md:hidden">
+        <div className="flex flex-col  xs:gap-6 items-center justify-center">
              <motion.div 
              initial={{ clipPath: "inset(100% 0 0 0)" }}
             whileInView={{ clipPath: "inset(0 0 0 0)" }}

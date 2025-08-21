@@ -21,20 +21,17 @@ const HostingAgents = () => {
             <p className="text-lg leading-tight font-sans  font-medium text-[#616161] dark:text-[#EDEDED] pt-3 text-center"> Once you subscribe to more than one hosting plan, or upgrade to the <span className="lg:block">Platinum Plan, you can skip the ticket system. Get assigned to a </span> <span className='lg:block'>dedicated WeHostify agent.</span></p>
             </motion.div>
             <div className="flex flex-col xl:flex-row w-full justify-between lg:gap-6 pt-6 sm:pt-10 items-start ">
-                <motion.div 
-                initial={{ opacity: 0,translateX:"-100%"}}
-                whileInView={{ opacity: 1,translateX:0 }}
-                transition={{ duration: 2 }}
-                 viewport={{once:true}}
+                <div 
+                
                 className="w-full">
                     <img className=' object-contain  w-full hidden xl:block  xl:w-[546px]' src={HOSTINGAGENT} alt='Hosting/customer care agent'/>
-                    <img className=' object-contain  w-full  xl:hidden' src={HOSTINGAGENTMOBILE} alt='Hosting/customer care agent'/>
-                </motion.div>
+                    <img className=' object-contain  w-full   xl:hidden' src={HOSTINGAGENTMOBILE} alt='Hosting/customer care agent'/>
+                </div>
                <div className="w-full">
                 <HostingAgentCard/>
                </div>
             </div>
-            <div className="mt-6 lg:mt-10 flex flex-col items-center justify-center">
+            <div className="mt-6 lg:mt-10 flex flex-col items-center sm:items-start md:items-center justify-center">
                 <FancyButton
                 text="Upgrade to Platinum"
                 bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"

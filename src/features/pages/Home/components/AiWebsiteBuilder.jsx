@@ -42,20 +42,20 @@ const AIWebsiteBuilder = () => {
                     className="text-lg leading-tight sm:text-xl lg:max-w-3xl mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2 text-center">With our smart AI website builder, all you have to do is tell us what your site is  <span className='lg:block'> about. We’ll generate a clean, responsive static web page in seconds. It’s fast,</span> it’s simple, and it just works. </motion.p>
                     <div className="flex flex-col-reverse md:flex-row  md:gap-6 justify-between items-center mt-6 lg:mt-10 ">
                         <motion.div 
-                        initial={{ x: -100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                         viewport={{ once: true,amount:0.3 }}
-                        // viewport={{ once: true }}
-                        transition={{ duration: 0.7 }}
+                        // initial={{ x: -100, opacity: 0 }}
+                        // whileInView={{ x: 0, opacity: 1 }}
+                        //  viewport={{ once: true,amount:0.3 }}
+                        // // viewport={{ once: true }}
+                        // transition={{ duration: 0.7 }}
                         className="bg-[#FFDD001A] py-6  px-5 rounded-[30px]">
                            <img className="object-contain lg:w-[600px]" src={WEBSITETEMPLATE}/>
                         </motion.div>
                         <motion.div 
-                        initial={{ x: 60, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                         viewport={{ once: true,amount:0.3 }}
-                        // viewport={{ once: true }}
-                        transition={{ duration: 0.7 }}
+                        // initial={{ x: 60, opacity: 0 }}
+                        // whileInView={{ x: 0, opacity: 1 }}
+                        //  viewport={{ once: true,amount:0.3 }}
+                        // // viewport={{ once: true }}
+                        // transition={{ duration: 0.7 }}
                         className=" w-fit">
                              <img className="object-contain lg:w-[600px] z-10" src={MANONLAPTOP}/>
                         </motion.div>

@@ -8,9 +8,12 @@ const JoinUs = () => {
         <p className="text-2xl leading-tight lg:text-3xl font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-0 text-center">Ready to Join Us?</p>
         <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2 text-center">WeHostify isn’t just a service — it’s a movement to empower every dream, every idea, and  <span className='lg:block'> every business across the continent and beyond.</span></p>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 items-stretch h-full w-full  mt-6 lg:mt-10">
-            <div className="flex flex-col w-full pt-5 dark:bg-[#18183A] bg-[#FFFFFF] rounded-[30px]">
+            <div className="flex flex-col card_one cursor-pointer transition-all duration-500 ease-in hover:scale-10 
+            w-full pt-5 dark:bg-[#18183A] bg-[#FFFFFF] rounded-[30px]">
+            
                <div className="flex w-full px-5 items-center lg:items-start justify-between">
-                 <p className="text-[22px]  lg:text-2xl  dark:text-white text-[#130D08] font-medium font-sans">Explore Hosting <span className="text-[#FF6A00] lg:block">Plans</span></p>
+                 <p className="text-[22px]  lg:text-2xl  dark:text-white text-[#130D08] font-medium
+                  font-sans">Explore Hosting <span className="text-[#FF6A00] lg:block">Plans</span></p>
                  <Icons.arrowUp className="fill-#616161 dark:fill-white"/>
                </div>
                <img className="w-full lg:pt-6 pt-4 h-full rounded-bl-[30px] rounded-br-[30px]" src={CLOUDCOMPUTINGONE} alt="cloud-computing-server-digital-data-storage-network-infrastructure"/>

@@ -12,7 +12,7 @@ const HeroSection = () => {
     whileInView={{opacity:1,scale:1}}
     viewport={{once:true}}
     transition={{duration:0.8,ease:'easeOut'}}
-     className="flex flex-col items-center w-ful justify-center pt-28 px-6 xl:px-0">
+     className="flex flex-col items-center w-full justify-center pt-28 px-6 xl:px-0">
         <p className="text-[#616161] text-center font-sans text-base dark:text-[#EDEDED] ">Built in Africa. Made for the World.</p>
        <div className="hidden xs:flex flex-col lg:flex-row lg:gap-2 lg:pt-2 pt-1">
          <p className="text-[#130D08] text-center font-bold font-sans text-2xl  md:text-4xl   dark:text-[#FFFFFF]">Web Hosting with African Roots, Global</p>

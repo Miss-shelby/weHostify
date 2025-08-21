@@ -12,18 +12,20 @@ const WebsiteBuilderFaq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="relative">
+    <div className="relative overflow-x-clip">
         <div className='xl:max-w-[1500px]   mx-auto flex flex-col items-center justify-center pt-20 lg:pt-20 pb-10 relative  px-6 lg:px-16'>
             <div
             initial={{ y: 48, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 0.75 }}
             viewport={{ once: true,amount:0.3}}
-            className="md:max-w-[790px] w-full mx-auto">
+            className="md:max-w-[790px] z-[20] w-full mx-auto">
                 <p className="text-base sm:text-base text-[#616161] dark:text-[#EDEDED] font-sans text-center">Frequently Asked Questions (FAQs)</p>
                 <p className="text-2xl leading-tight lg:text-[32px] font-bold font-sans text-[#130D08] dark:text-[#fff] pt-1 lg:pt-2 text-center">Quick Answers to Help You Build Better</p>
                 <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-[10px] text-center">We’ve answered the most common questions about our AI Website Builder so you can get started with confidence — whether you’re creating your first website or switching from another platform.</p>
             </div>
+            <img className=' object-contain block top-40  right-0  translate-x-[20%] lg:hidden absolute z-[0] 
+                     opacity-50' src={BGGRADIENT} alt='Yellow gradient'/> 
             <div className="w-full mt-6 lg:mt-14 space-y-4 relative">
               {websiteBuilderfaqData.map((faq, index) => (
                   <motion.div
@@ -46,7 +48,8 @@ const WebsiteBuilderFaq = () => {
             ))}
             </div>
         </div>
-        <div className="absolute overflow-hidden  lg:block  translate-y-[78%] bottom-0 right-1/2   -z-0 pointer-events-none opacity-55 block ">
+        <div className="absolute overflow-hidden block lg:block w-full translate-y-[38%] bottom-0 right-1/4  
+         -z-0 pointer-events-none opacity-55  ">
           <img src={GLOW} alt="glow"className=" object-cover    right-1/2  w-[400px]  "/>
         </div>
     </div>

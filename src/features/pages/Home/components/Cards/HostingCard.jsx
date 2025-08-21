@@ -10,7 +10,8 @@ const HostingCard = ({name,desc,price,packages,isPopular}) => {
   console.log(darkMode,'mode here');
   // hover:animate-pulse-glow
   return (
-    <div className='w-full lg:max-w-full flex flex-col   cursor-pointer transition-all duration-500 ease-in-out hover:scale-10 hover:border-[rgba(255,194,51,0.8)] hover:border-[3px] relative px-4 lg:px-[22px] py-7 rounded-[20px] bg-[#FFFFFF] dark:bg-[#18183A]'>
+    <div className='w-full lg:max-w-full flex flex-col   cursor-pointer transition-all duration-500 ease-in-out hover:scale-10
+     hover:border-[rgba(255,194,51,0.8)] hover:border-[3px] relative px-4 lg:px-[22px] py-7 rounded-[20px] bg-[#FFFFFF] dark:bg-[#18183A]'>
       {
         isPopular && <div className="left-1/2 transform -translate-x-1/2  absolute top-[6px]">
           <Button title="Most Popular" textColor="text-[#130D08]" bgColor="bg-[#FFDD00]" extraClass="!font-semibold !text-sm font-sans !py-[10px] lg:!px-[20px] xl:!px-[35px] text-center"/>
