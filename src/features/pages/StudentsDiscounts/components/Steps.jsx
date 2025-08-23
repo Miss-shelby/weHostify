@@ -1,6 +1,9 @@
 import { BGGRADIENT, CIRCLE1, CIRCLE2, CIRCLE3 } from "../../../../constants/assetexports"
 import FancyButton from "../../../shared/Buttons/FancyButton"
 import useIsMobile from "../../../shared/utils/isMobile";
+import AnimatedCircleSteps from "./AnimatedCircleSteps";
+import StackedCircleAnimationGrow from "./AnimtedCircle";
+import IntersectingCirclesAnimation from "./IntersectingCircleAnimation";
 
 
 const Steps = () => {
@@ -12,10 +15,13 @@ const Steps = () => {
         <p className="text-lg leading-tight sm:text-xl   font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2 text-center">We’ve kept the process simple and secure — just send us a few details, and we’ll set up <span className='lg:block'>your account so you can launch in no time.  </span></p>
              {/* <img className=' object-contain w-[500px] hidden lg:block absolute right-0 translate-x-[30%]  z-0 top-[25%]  opacity-60' src={BGGRADIENT} alt='Yellow gradient'/> */}
              <div className="lg:grid grid-cols-1 hidden lg:grid-cols-3 pt-6 lg:mt-10 w-full gap-14 items-end  justify-between z-10 ">
-                <img src={CIRCLE1} className="   object-contain h-[200px]" alt="circle one"/>
+                {/* <img src={CIRCLE1} className="   object-contain h-[200px]" alt="circle one"/> */}
+                <AnimatedCircleSteps/>
                 <img className=' object-contain hidden lg:block absolute left-0 w-[500px] translate-x-[-30%]  z-0 top-72  opacity-70' src={BGGRADIENT} alt='Yellow gradient'/>
-                <img src={CIRCLE2}  className=" object-contain h-[263px]" alt="circletwo"/>
-                 <img src={CIRCLE3}  className=" object-contain h-[300px]" alt="circle three"/>
+                {/* <img src={CIRCLE2}  className=" object-contain h-[263px]" alt="circletwo"/> */}
+                <StackedCircleAnimationGrow/>
+                 {/* <img src={CIRCLE3}  className=" object-contain h-[300px]" alt="circle three"/> */}
+                 <IntersectingCirclesAnimation/>
              </div>
                 <div className=" grid-cols-1 hidden lg:grid lg:grid-cols-3 pt-6 lg:mt-10 w-full  gap-11 z-10 ">
                    <div className="">
@@ -46,9 +52,10 @@ const Steps = () => {
                         </ul>
                    </div>
                 </div>
-                <div className="flex flex-col items-center mt-6 gap-6 w-full lg:hidden z-10 ">
+                <div className="flex flex-col items-center mt-6 gap-4 w-full lg:hidden z-10 ">
                    <div className="w-full flex flex-col items-center justify-center">
-                        <img src={CIRCLE1} className=" w-[150px]  object-contain" alt="circle one"/>
+                        {/* <img src={CIRCLE1} className=" w-[150px]  object-contain" alt="circle one"/> */}
+                        <AnimatedCircleSteps/>
                         <p className="text-[22.5px] py-4 lg:text-3xl lg:mt-10 text-[#130D08] font-sans font-semibold dark:text-white ">Submit Your Student Details</p>
                         <ul className="pl-6  lg:mt-10 text-[#616161] dark:text-[#EDEDED] list-disc font-medium text-lg font-sans">
                             <li className="">Upload a valid student ID card</li>
@@ -57,7 +64,8 @@ const Steps = () => {
                         </ul>
                    </div>
                     <div className="w-full flex flex-col z-10 items-center justify-center ">
-                        <img src={CIRCLE2}  className="w-[150px] object-contain" alt="circletwo"/>
+                        {/* <img src={CIRCLE2}  className="w-[150px] object-contain" alt="circletwo"/> */}
+                        <StackedCircleAnimationGrow/>
                         <p className="text-[22.5px] lg:text-3xl py-4 text-[#130D08] font-sans font-semibold dark:text-white ">Verification & Account Setup</p>
                         <img className=' object-contain  lg:hidden absolute right-[10%] w-[300px]   z-0 top-[50%]  opacity-50' src={BGGRADIENT} alt='Yellow gradient'/>
                         <ul className="pl-6  text-[#616161] dark:text-[#EDEDED] list-disc font-medium text-lg font-sans">
@@ -67,7 +75,8 @@ const Steps = () => {
                         </ul>
                    </div>
                    <div className=" w-full flex flex-col items-center justify-center">
-                        <img src={CIRCLE3}  className="w-[150px] object-contain" alt="circle three"/>
+                        {/* <img src={CIRCLE3}  className="w-[150px] object-contain" alt="circle three"/> */}
+                         <IntersectingCirclesAnimation/>
                         <p className="text-[22.5px] py-4 lg:text-3xl lg:mt-10 text-[#130D08] font-sans font-semibold dark:text-white ">Start Enjoying Your Discount</p>
                         <ul className="pl-6  text-[#616161] dark:text-[#EDEDED] list-disc font-medium text-lg font-sans">
                             <li className="">We’ll send your login details to your school email</li>

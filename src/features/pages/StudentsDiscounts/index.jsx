@@ -7,6 +7,12 @@ import Steps from './components/Steps'
 import WhyChooseUsAsStudent from './components/WhyChooseUsAsStudent'
 import Faq from '../Home/components/Faq'
 import StudentDiscountFaq from './components/StudentDiscountFaq'
+import CircleAnimation from './components/AnimateCricleTest'
+import StackedCircleAnimation from './components/AnimateCricleTest'
+import StackedCircleAnimationWithImage from './components/AnimatedCircleWithImage'
+import StackedCircleAnimationGrow from './components/AnimtedCircle'
+import IntersectingCirclesAnimation from './components/IntersectingCircleAnimation'
+import AnimatedCircleSteps from './components/AnimatedCircleSteps'
 
 const StudentDiscount = () => {
    return (
@@ -15,6 +21,7 @@ const StudentDiscount = () => {
          <NavBar/>
          <StudentDiscountProgram/>
          <WhatYouNeed/>
+         {/* <AnimatedCircleSteps/> */}
          <Steps/>
          <WhyChooseUsAsStudent/>
          <StudentDiscountFaq/>

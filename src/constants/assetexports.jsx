@@ -101,6 +101,13 @@ import WEBSITEBUILDERMOBILE2 from "../assets/website-builder2-mobile.png"
 import WEBSITEBUILDERDARKMOBILE from "../assets/BuilderMobileDark (1).png"
 import WEBSITEBUILDERDARKMOBILE2 from "../assets/BuilderMobileDark (2).png"
 import LEFTBOTTOMLINEMOBILE from "../assets/left-docrative-line-mobile.png"
+import YELLOWCIRCLE1 from "../assets/circle-1.png"
+import YELLOWCIRCLE2 from "../assets/circle-2.png"
+import YELLOWCIRCLE3 from "../assets/circle-3.png"
+import YELLOWCIRCLE4 from "../assets/circle-4.png"
+import YELLOWCIRCLE5 from "../assets/circle-5.png"
+import INTERSECTINGYELLOWCIRCLE from "../assets/intersecting-yellow-circle.png"
+import INTERSECTINGPINKCIRCLE from "../assets/intersecting-pink-circle.png"
 export {
     LOGO,
     FLAG,
@@ -204,6 +211,13 @@ export {
     WEBSITEBUILDERMOBILE2,
     WEBSITEBUILDERDARKMOBILE,
     WEBSITEBUILDERDARKMOBILE2,
-    LEFTBOTTOMLINEMOBILE
+    LEFTBOTTOMLINEMOBILE,
+    YELLOWCIRCLE1,
+    YELLOWCIRCLE2,
+    YELLOWCIRCLE3,
+    YELLOWCIRCLE4,
+    YELLOWCIRCLE5,
+    INTERSECTINGPINKCIRCLE,
+    INTERSECTINGYELLOWCIRCLE
 
 }
