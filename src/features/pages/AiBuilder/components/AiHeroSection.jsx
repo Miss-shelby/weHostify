@@ -22,7 +22,7 @@ const AiHeroSection = () => {
                     <p className="text-lg leading-tight lg:text-xl  text-center  mx-auto font-sans font-medium text-[#616161] dark:text-[#EDEDED] pt-3 lg:pt-2">Launch fast — choose from 200+ templates, get AI-generated content, optimize for <span className="lg:block">from concept to final launch. </span></p>
                     <div className=' hidden lg:flex lg:flex-row w-full relative items-stretch mt-6 lg:mt-[50px] gap-5'>
                       <div className=' w-full h-full'>
-                        <img src={WEBSITEBUILDERHEROIMAGE1} className='z-10 lg:h-[320px]  xl:h-auto object-fill' alt='A scientist '/>
+                        <img src={WEBSITEBUILDERHEROIMAGE1} className='z-10 lg:min-w-[320px]  xl:min-w-auto object-fill' alt='A scientist '/>
                       </div>
                       <div className='flex flex-col gap-6 z-10'>
                         <div className='bg-[linear-gradient(180deg,#FFDD00_0%,rgba(255,255,255,0)_100%)]  
@@ -34,14 +34,20 @@ const AiHeroSection = () => {
                       </div>
                       <div className='flex flex-col z-10  items-start justify-start '>
                        <div className='w-full'>
-                           <img src={WEBSITEBUILDERHEROIMAGE2} className='object-fill scale-[1.14] block  w-[450px]  dark:hidden  ' alt='A scientist '/>
+                           <img src={WEBSITEBUILDERHEROIMAGE2} className='object-fill xl:scale-[1.14] block  xl:w-[450px]  dark:hidden  ' alt='A scientist '/>
                         <img src={HEROIMAGEDARKMODE} className='object-fill scale-[1.14]  hidden dark:block w-[450px]' alt='A scientist '/>
                        </div>
-                        <div className='w-full mt-6'>
-                    <FancyButton extraClass="flex items-center justify-center gap-2 w-full" icon={<Icons.stars/>} text="Generate Website" bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
-                      bgRadial="radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%)" textColor="#fff"
-                      conicColor="rgba(255, 221, 0, 0.5)" width={isMobile?"250px":"500px"}
-                      height="68px" borderRadius="50px" animationSpeed="5s" onClick={() => alert("Clicked!")}/>
+                        <div className='w-full mt-6 lg:hidden xl:block'>
+                        <FancyButton extraClass="flex items-center justify-center gap-2 w-full" icon={<Icons.stars/>} text="Generate Website" bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
+                          bgRadial="radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%)" textColor="#fff"
+                          conicColor="rgba(255, 221, 0, 0.5)" width={isMobile?"250px":"500px"}
+                          height="68px" borderRadius="50px" animationSpeed="5s" onClick={() => alert("Clicked!")}/>
+                  </div>
+                   <div className='w-full mt-6 lg:block xl:hidden'>
+                        <FancyButton extraClass="flex items-center justify-center gap-2 w-full" icon={<Icons.stars/>} text="Generate Website" bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
+                          bgRadial="radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%)" textColor="#fff"
+                          conicColor="rgba(255, 221, 0, 0.5)" width="300px"
+                          height="68px" borderRadius="50px" animationSpeed="5s" onClick={() => alert("Clicked!")}/>
                   </div>
                       </div>
                     </div>

@@ -24,7 +24,7 @@ const WebsitesTemplates = () => {
             <img src={WEBSITETEMPLATE3} className='object-cover w-full md:w-fit'  alt='website teplates'/>
              <img src={WEBSITETEMPLATE2} className='object-cover w-full md:w-fit'  alt='website teplates'/>
         </div>
-         <div className='mt-6 lg:mt-10 w-full'>
+         <div className='mt-6 flex lg:mt-10 lg:justify-center w-full'>
             <FancyButton extraClass="z-20" 
              text="Use AI Builder" bgLinear="linear-gradient(0deg, rgba(255, 106, 0, 0.1), rgba(255, 106, 0, 0.1))"
                 bgRadial="radial-gradient(50% 50% at 50% 50%, #FF6A00 0%, #FF6A00 100%)" textColor="#fff"

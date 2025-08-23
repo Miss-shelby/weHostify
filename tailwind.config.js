@@ -22,8 +22,12 @@ export default {
         'blue-gradient-text': 'linear-gradient(97.4deg, #007BFF 2.87%, #8CC4FF 105.85%)',
       },
       dropShadow: {
-        'freepik': '0px 8px 6px #FBB03380',
+        freepikMobile: "0px 4px 2px #FBB03380", // smaller shadow
+        freepikLg: '0px 8px 6px #FBB03380', // larger shadow
       },
+      // dropShadow: {
+      //   'freepik': '0px 8px 6px #FBB03380',
+      // },
       keyframes: {
         'pulse-glow': {
           '0%, 100%': {

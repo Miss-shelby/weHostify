@@ -93,7 +93,8 @@ const menuRef = useRef(null);
 
           {/* medium and mobile screen  */}
           <div className="cursor-pointer block xl:hidden" onClick={() => setMenuOpen((prev) => !prev)}>
-                    {menuOpen ? <IoCloseOutline className='dark:text-white' size={25}/> : <RxHamburgerMenu className='dark:text-white' size={25}/>}
+                    {menuOpen ? <IoCloseOutline className={` ${yellowBg?"dark:text-black" :"dark:text-white"}`}size={25}/> : 
+                    <RxHamburgerMenu  className={` ${yellowBg?"dark:text-black" :"dark:text-white"}`} size={25}/>}
           </div>
           <AnimatePresence>
             

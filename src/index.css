@@ -51,16 +51,217 @@ html {
   border-image-slice: linear-gradient(to bottom, #44D9FE, transparent) 1 stretch;
   border-radius: 30px;
 } */
-
-.card_one:hover {
+.card_one {
   position: relative;
   border-radius: 30px;
-  border: 5px solid transparent; 
-  background-clip: padding-box;
-  cursor: pointer;
-  border-image: linear-gradient(to top, #44D9FE, transparent) 1;
-  border-image-slice: 1;
+  background: #ffffff; /* light mode background */
+  overflow: hidden; /* keep border + content aligned */
+   transition: background 0.5s ease-in-out;
 }
+
+.dark .card_one {
+  background: #18183A; /* dark mode background */
+}
+
+.card_one::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 5px; /* border thickness */
+  background: linear-gradient(to top, #44D9FE, transparent);
+
+  /* gradient border mask */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0;
+  /* transition: opacity 0.3s ease; this or that 👇*/ 
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+.card_one:hover::before {
+  opacity: 1; /* border fades in */
+}
+.card_one:hover {
+  transform: scale(1); /* smooth scale up */
+}
+
+/* CARD TWO  */
+
+.card_two{
+  position: relative;
+  border-radius: 30px;
+  /* border: 5px solid #fff; */
+  background: #FF6A004D;
+    overflow: hidden;
+  /* transition: all 0.5s ease-in; */
+}
+.dark .card_two{
+    background: #FF6A004D;; /* dark mode background */
+}
+.card_two {
+  position: relative;
+  border-radius: 30px;
+  background: #FF6A004D; /* light mode background */
+  overflow: hidden; /* keeps content inside border */
+   transition: background 0.5s ease-in-out;
+}
+
+.dark .card_two {
+  background: rgba(255, 106, 0, 0.3); /* dark mode fallback */
+}
+
+.card_two::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 5px; /* border thickness */
+  background: linear-gradient(180deg, rgba(153, 64, 0, 0) 0%, #FF6A00 100%);
+
+  /* gradient border mask */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* inner wrapper for smooth scaling */
+.card_two__content {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  transition: transform 0.4s ease;
+}
+
+.card_two:hover::before {
+  opacity: 1; /* border fades in */
+}
+
+.card_two:hover .card_two__content {
+  transform: scale(0.97); /* content shrinks inside */
+}
+/* card three  */
+
+.dark .card_three{
+    background: #18183A; /* dark mode background */
+}
+.card_three {
+  position: relative;
+  border-radius: 30px;
+  background: #FFFFFF; /* white bg */
+  overflow: hidden; /* keeps content inside */
+  transition: background 0.5s ease-in-out;
+}
+
+.card_three::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 5px; /* border thickness */
+  background: linear-gradient(
+    180deg,
+    rgba(80, 53, 41, 0) 0%,
+    #B6795E 100%
+  );
+
+  /* mask to show only border */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card_three__content {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  transition: transform 0.5s ease;
+}
+
+.card_three:hover::before {
+  opacity: 1; /* show gradient border */
+}
+
+.card_three:hover .card_three__content {
+  transform: scale(0.97); /* smooth inside shrink */
+}
+
+/* CARD FOUR  */
+.card_four {
+  position: relative;
+  border-radius: 30px;
+  background: #FFFFFF; /* default light mode */
+  overflow: hidden;
+  transition: background 0.5s ease-in-out;
+}
+
+.dark .card_four {
+  background: #18183A; /* dark mode background */
+}
+
+.card_four::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 5px; /* border thickness */
+  background: linear-gradient(
+    180deg,
+    #E456EC 0%,
+    rgba(129, 49, 134, 0) 100%
+  );
+
+  /* show only border, hide center */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* transform: scale(0.97); */
+}
+
+.card_four__content {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card_four:hover::before {
+  opacity: 1; /* show border */
+}
+
+.card_four:hover .card_four__content {
+  transform: scale(0.97); /* smooth inside shrink */
+}
+
+
+
+
+ /* /* border-image:  */
 
 /* NAVBAR  */
 .bg-yellow-trans {

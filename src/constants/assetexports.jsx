@@ -100,6 +100,7 @@ import WEBSITEBUILDERMOBILE from "../assets/website-builder-mobile.png"
 import WEBSITEBUILDERMOBILE2 from "../assets/website-builder2-mobile.png"
 import WEBSITEBUILDERDARKMOBILE from "../assets/BuilderMobileDark (1).png"
 import WEBSITEBUILDERDARKMOBILE2 from "../assets/BuilderMobileDark (2).png"
+import LEFTBOTTOMLINEMOBILE from "../assets/left-docrative-line-mobile.png"
 export {
     LOGO,
     FLAG,
@@ -202,6 +203,7 @@ export {
     WEBSITEBUILDERMOBILE,
     WEBSITEBUILDERMOBILE2,
     WEBSITEBUILDERDARKMOBILE,
-    WEBSITEBUILDERDARKMOBILE2
+    WEBSITEBUILDERDARKMOBILE2,
+    LEFTBOTTOMLINEMOBILE
 
 }

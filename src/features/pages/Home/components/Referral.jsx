@@ -6,9 +6,9 @@ import { Icons } from '../../../../Icons'
 import {motion } from "framer-motion"
 const ReferralProgram = () => {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
+      <img className=' object-contain absolute opacity-65 w-[300px] lg:opacity-100 z-[0] right-0 translate-x-[20%]  lg:left-1/2 -translate-y-[25%] lg:-translate-y-0 transform lg:-translate-x-1/2 top-0 lg:top-44' src={BGGRADIENT} alt='Yellow gradient'/>
         <div className='xl:max-w-[1500px] overflow-hidden mx-auto flex flex-col items-center justify-center pt-20 lg:pt-28 relative  px-6 lg:px-16'>
-             <img className=' object-contain absolute opacity-65 w-[300px] lg:opacity-100 z-[0] right-0 translate-x-[20%]  lg:left-1/2 -translate-y-[25%] lg:-translate-y-0 transform lg:-translate-x-1/2 top-0 lg:top-44' src={BGGRADIENT} alt='Yellow gradient'/>
             <div className="w-full z-20">
                 <motion.div
                  initial={{ opacity: 0, y: 30 }}

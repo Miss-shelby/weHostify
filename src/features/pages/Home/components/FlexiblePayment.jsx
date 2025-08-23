@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import { BGGRADIENT, BTCGIRL, DECORATIVECENTERLINE, FREEPIK, HOSTINGAGENT, IMAGEONE, IMAGETWO, LEFTBOTTOMLINE, STARS, TOPDECORATIVECENTERLINE, TOPRIGHTDECORATIVECENTERLINE } from '../../../../constants/assetexports'
+import { BGGRADIENT, BTCGIRL, DECORATIVECENTERLINE, FREEPIK, HOSTINGAGENT, IMAGEONE, IMAGETWO, LEFTBOTTOMLINE, LEFTBOTTOMLINEMOBILE, STARS, TOPDECORATIVECENTERLINE, TOPRIGHTDECORATIVECENTERLINE } from '../../../../constants/assetexports'
 import FancyButton from '../../../shared/Buttons/FancyButton'
 import { Icons } from '../../../../Icons'
 import {motion } from "framer-motion"
@@ -84,15 +84,19 @@ const item = {
                         </motion.div>
                         </motion.div>
                     <div
-                     className="dark:bg-[#18183A] bg-[linear-gradient(94.18deg,_#1A1715_0.87%,_#000000_98.72%)] dark:bg-none relative h-[200px] lg:h-[300px] mt-[26px] flex flex-col justify-center  rounded-[24px]">
-                        <img src={LEFTBOTTOMLINE} className="w-[100px] lg:w-fit absolute object-contain bottom-0 left-0 z-0" alt="decorative line"/>
-                        <img src={DECORATIVECENTERLINE} className="w-[100px] lg:w-fit absolute object-contain bottom-0 left-1/3 " alt="decorative line"/>
-                         <img src={TOPDECORATIVECENTERLINE} className="w-[100px] lg:w-fit absolute object-contain top-0 left-1/3 lg:left-1/2 " alt="decorative line"/>
-                         <img src={TOPRIGHTDECORATIVECENTERLINE} className="w-[100px] lg:w-fit  absolute object-contain top-0 right-0 " alt="decorative line"/>
+                    
+                     className=" bg-[linear-gradient(94.18deg,_#1A1715_0.87%,_#000000_98.72%)] relative h-[200px] lg:h-[300px] mt-[26px] flex flex-col 
+                     justify-center  rounded-[24px]">
+                        <img src={LEFTBOTTOMLINE} className="w-[100px] hidden lg:block lg:w-fit  absolute object-contain bottom-0 lg:left-0 z-0" alt="decorative line"/>
+                         <img src={LEFTBOTTOMLINEMOBILE} className="h-[120px] block lg:hidden  absolute object-contain bottom-0 lg:left-0 z-0" alt="decorative line"/>
+                        <img src={DECORATIVECENTERLINE} className="w-[100px] hidden lg:block lg:w-fit absolute object-contain bottom-0 left-1/3 " alt="decorative line"/>
+                         <img src={TOPDECORATIVECENTERLINE} className="w-[60px] lg:hidden absolute object-contain top-[60%] left-[30%] " alt="decorative line"/>
+                         <img src={TOPDECORATIVECENTERLINE} className="w-[80px] lg:w-fit absolute object-contain top-0 left-1/3 lg:left-1/2 " alt="decorative line"/>
+                         <img src={TOPRIGHTDECORATIVECENTERLINE} className="w-[80px]  lg:w-fit  absolute object-contain top-0 right-0 " alt="decorative line"/>
                           <img src={STARS} className="absolute object-contain opacity-35 w-[40px] sm:w-fit top-0 right-0 " alt="stars"/>
                         <div className="flex w-full items-center gap-2 lg:gap-10 py-10 z-20 px-1 lg:px-0">
                             <div className="">
-                                <img src={FREEPIK} alt="Freepik" className="object-contain drop-shadow-freepik"/>
+                                <img src={FREEPIK} alt="Freepik" className="object-contain  drop-shadow-freepikMobile lg:drop-shadow-freepikLg"/>
                             </div>
                         <div className="w-full">
                             <p className='text-[#FFFFFF] font-bold text-base leading-tight xl:leading-normal lg:text-4xl font-sans'>Use a Crypto Payment<span className='lg:block'>Gateway of Your Choice</span> </p>
